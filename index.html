@@ -334,22 +334,22 @@
         width: calc(100% - 2rem);
         max-width: 1200px;
         z-index: 1000;
-        background: rgba(255, 255, 255, 0.8);
+        background: rgba(255, 255, 255, 0.7);
         color: #000000;
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid #3691bf;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
         border-radius: var(--border-radius-pill);
-        box-shadow: 0 8px 32px rgba(22, 56, 86, 0.2);
+        box-shadow: 0 8px 32px rgba(22, 56, 86, 0.15);
         padding: 0.75rem 1.5rem;
         transition: all var(--transition-normal);
       }
 
       .navbar.scrolled {
-        background: rgba(255, 255, 255, 0.85);
+        background: rgba(255, 255, 255, 0.75);
         color: #000000;
-        border: 1px solid #3691bf;
-        box-shadow: 0 10px 40px rgba(22, 56, 86, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0 10px 40px rgba(22, 56, 86, 0.2);
       }
 
       .navbar-content {
@@ -376,7 +376,7 @@
       }
 
       .footer-logo-img {
-        height: 60px;
+        height: 130px;
         width: auto;
         object-fit: contain;
         margin-bottom: 1rem;
@@ -532,10 +532,6 @@
         margin-bottom: 1.5rem;
       }
 
-      .hero-badge i {
-        color: #f59e0b;
-      }
-
       .hero-title {
         font-size: clamp(2.5rem, 6vw, 4rem);
         font-weight: 700;
@@ -591,6 +587,7 @@
         padding: 6rem 0;
         background: var(--white);
         position: relative;
+        scroll-margin-top: 100px;
       }
 
       .about-content {
@@ -710,6 +707,7 @@
         );
         position: relative;
         overflow: hidden;
+        scroll-margin-top: 100px;
       }
 
       .courses-wrapper {
@@ -898,6 +896,7 @@
         padding: 6rem 0;
         background: var(--white);
         position: relative;
+        scroll-margin-top: 100px;
       }
 
       .services-grid {
@@ -998,6 +997,7 @@
           var(--darker-azure) 100%
         );
         position: relative;
+        scroll-margin-top: 100px;
       }
 
       .contact-content {
@@ -1485,7 +1485,6 @@
       <div class="container">
         <div class="hero-content animate-fade-in-up">
           <div class="hero-badge">
-            <i class="fas fa-certificate"></i>
             TESDA Accredited Institution
           </div>
 
@@ -2130,7 +2129,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="img/CAATELOGOROUNDED.png" alt="CAATE Logo" class="footer-logo-img">
+                    <img src="img/ROUNDCAATELOGO.png" alt="CAATE Logo" class="footer-logo-img">
                     <p>
                         Creative Aesthetics Academy and Technical Education Inc. is a TESDA-accredited institution committed to producing world-class beauty and aesthetic professionals.
                     </p>
