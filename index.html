@@ -334,21 +334,22 @@
         width: calc(100% - 2rem);
         max-width: 1200px;
         z-index: 1000;
-        background: white;
+        background: rgba(255, 255, 255, 0.8);
         color: #000000;
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(54, 145, 191, 0.2);
+        border: 1px solid #3691bf;
         border-radius: var(--border-radius-pill);
-        box-shadow: 0 8px 32px rgba(22, 56, 86, 0.3);
+        box-shadow: 0 8px 32px rgba(22, 56, 86, 0.2);
         padding: 0.75rem 1.5rem;
         transition: all var(--transition-normal);
       }
 
       .navbar.scrolled {
-        background: white;
+        background: rgba(255, 255, 255, 0.85);
         color: #000000;
-        box-shadow: 0 10px 40px rgba(22, 56, 86, 0.4);
+        border: 1px solid #3691bf;
+        box-shadow: 0 10px 40px rgba(22, 56, 86, 0.25);
       }
 
       .navbar-content {
@@ -505,9 +506,9 @@
         overflow: hidden;
         background: linear-gradient(
           135deg,
-          var(--dark-azure) 0%,
-          var(--darker-azure) 100%
-        );
+          rgba(22, 56, 86, 0.8),
+          rgba(18, 57, 90, 0.8)
+        ), url('../img/CAATEBGEDITED.png') center/cover no-repeat;
       }
 
       .hero-content {
@@ -583,31 +584,6 @@
         border-radius: var(--border-radius-lg);
         box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
         border: 1px solid rgba(54, 145, 191, 0.2);
-      }
-
-      .hero-stats {
-        display: flex;
-        gap: 3rem;
-        margin-top: 4rem;
-        padding-top: 2rem;
-        border-top: 1px solid rgba(54, 145, 191, 0.2);
-      }
-
-      .stat-item {
-        text-align: left;
-      }
-
-      .stat-number {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: var(--primary-blue);
-        line-height: 1;
-      }
-
-      .stat-label {
-        font-size: 0.9375rem;
-        color: rgba(255, 255, 255, 0.7);
-        margin-top: 0.25rem;
       }
 
       /* ==================== About Section (Light) ==================== */
@@ -1535,20 +1511,6 @@
             </a>
           </div>
 
-          <div class="hero-stats">
-            <div class="stat-item">
-              <div class="stat-number">500+</div>
-              <div class="stat-label">Graduates</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">12+</div>
-              <div class="stat-label">Programs</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">98%</div>
-              <div class="stat-label">Pass Rate</div>
-            </div>
-          </div>
         </div>
 
     </section>
