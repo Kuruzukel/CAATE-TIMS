@@ -48,15 +48,22 @@ const navLinks = document.querySelectorAll(".nav-link");
 
 window.addEventListener("scroll", () => {
   let current = "";
+  const scrollPosition = window.scrollY + 250;
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
+    const sectionBottom = sectionTop + sectionHeight;
 
-    if (scrollY >= sectionTop - 200) {
+    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
       current = section.getAttribute("id");
     }
   });
+
+  // Special case: if we're at the bottom of the page, activate footer
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
+    current = "footer";
+  }
 
   navLinks.forEach((link) => {
     link.classList.remove("active");
