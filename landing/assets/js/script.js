@@ -90,7 +90,9 @@ const maxIndex = cardsPerPage.length - 1;
 function getScrollAmount(pageIndex) {
   let scrollAmount = 0;
   for (let i = 0; i < pageIndex; i++) {
-    scrollAmount += cardsPerPage[i] * cardWidth + cardsPerPage[i] * gap;
+    // For each previous page, scroll past all cards and their gaps
+    // Page has N cards, which means N-1 gaps between them, plus 1 gap after the last card
+    scrollAmount += (cardsPerPage[i] * (cardWidth + gap));
   }
   return scrollAmount;
 }

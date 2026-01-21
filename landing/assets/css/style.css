@@ -792,6 +792,9 @@ h6 {
   transition: all var(--transition-normal);
   background: rgba(255, 255, 255, 0.95);
   box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  height: 500px;
 }
 
 .course-card:hover {
@@ -805,10 +808,14 @@ h6 {
   height: 200px;
   object-fit: cover;
   border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+  flex-shrink: 0;
 }
 
 .course-content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .course-badge {
@@ -839,18 +846,19 @@ h6 {
   color: var(--text-medium);
   line-height: 1.6;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-height: 50px;
+  height: 56px;
   margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
 .course-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1.25rem;
+  margin-top: auto;
   padding-top: 1.25rem;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
