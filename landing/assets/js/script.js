@@ -79,13 +79,24 @@ const nextBtn = document.getElementById("nextBtn");
 const dots = document.querySelectorAll(".carousel-dot");
 
 let currentIndex = 0;
-const cardWidth = 350 + 24;
-const cardsPerView =
-  Math.floor(carousel.parentElement.clientWidth / cardWidth) || 1;
-const maxIndex = Math.ceil(12 / cardsPerView) - 1;
+const cardWidth = 285; // card width - updated to match CSS
+const gap = 24; // 1.5rem = 24px gap
+const totalCourses = 10;
+
+// Define cards per page: Page 1 = 4 cards, Page 2 = 3 cards, Page 3 = 3 cards
+const cardsPerPage = [4, 3, 3];
+const maxIndex = cardsPerPage.length - 1;
+
+function getScrollAmount(pageIndex) {
+  let scrollAmount = 0;
+  for (let i = 0; i < pageIndex; i++) {
+    scrollAmount += cardsPerPage[i] * cardWidth + cardsPerPage[i] * gap;
+  }
+  return scrollAmount;
+}
 
 function updateCarousel() {
-  const scrollAmount = currentIndex * cardWidth * cardsPerView;
+  const scrollAmount = getScrollAmount(currentIndex);
   carousel.scrollTo({
     left: scrollAmount,
     behavior: "smooth",
