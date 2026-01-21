@@ -481,13 +481,23 @@ h6 {
   color: var(--white);
   margin-bottom: 1.2rem;
   line-height: 1.1;
+  text-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0.8),
+    1px -1px 0 rgba(255, 255, 255, 0.8),
+    -1px 1px 0 rgba(255, 255, 255, 0.8),
+    1px 1px 0 rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.3);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
 }
 
 .hero-title .highlight {
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-dark));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+  filter: drop-shadow(-1px -1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(1px -1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(-1px 1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(1px 1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
 }
 
 .hero-description {
