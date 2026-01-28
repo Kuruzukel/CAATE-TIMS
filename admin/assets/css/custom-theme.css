@@ -862,3 +862,103 @@ footer span,
         padding-top: 0.7rem !important;
     }
 }
+
+/* Submenu Active State Styling */
+.menu-sub>.menu-item.active>.menu-link {
+    background: rgba(54, 145, 191, 0.25) !important;
+    backdrop-filter: blur(10px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(10px) saturate(180%) !important;
+    border: 1px solid rgba(54, 145, 191, 0.35) !important;
+    color: var(--white) !important;
+    border-radius: var(--border-radius-sm);
+    box-shadow: 0 4px 12px rgba(54, 145, 191, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    font-weight: 600 !important;
+}
+
+.menu-sub>.menu-item.active>.menu-link:hover {
+    background: rgba(54, 145, 191, 0.35) !important;
+    border: 1px solid rgba(54, 145, 191, 0.45) !important;
+    box-shadow: 0 6px 16px rgba(54, 145, 191, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Submenu Item Hover (Non-Active) */
+.menu-sub>.menu-item:not(.active)>.menu-link:hover {
+    background: rgba(54, 145, 191, 0.12) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(54, 145, 191, 0.2) !important;
+    color: var(--white) !important;
+    box-shadow: 0 2px 8px rgba(54, 145, 191, 0.15) !important;
+}
+
+/* Submenu Text Color */
+.menu-sub .menu-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    transition: all var(--transition-fast);
+}
+
+.menu-sub>.menu-item.active .menu-link {
+    color: var(--white) !important;
+}
+
+/* Remove active state from parent menu when submenu is active */
+.menu-inner>.menu-item.active.open>.menu-link.menu-toggle {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: var(--lighter-blue) !important;
+}
+
+.menu-inner>.menu-item.active.open>.menu-link.menu-toggle:hover {
+    background: rgba(54, 145, 191, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(54, 145, 191, 0.2) !important;
+    color: var(--white) !important;
+    box-shadow: 0 4px 12px rgba(54, 145, 191, 0.15) !important;
+}
+
+/* Keep the icon color normal for parent menu toggle */
+.menu-inner>.menu-item.active.open>.menu-link.menu-toggle .menu-icon {
+    color: var(--light-blue) !important;
+}
+
+.menu-inner>.menu-item.active.open>.menu-link.menu-toggle:hover .menu-icon {
+    color: var(--white) !important;
+}
+
+/* Only apply active state to parent if no submenu item is active */
+.menu-inner>.menu-item.active:not(.open)>.menu-link:not(.menu-toggle) {
+    background: rgba(54, 145, 191, 0.3) !important;
+    backdrop-filter: blur(15px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(15px) saturate(180%) !important;
+    border: 1px solid rgba(54, 145, 191, 0.4) !important;
+    color: var(--white) !important;
+    border-radius: var(--border-radius-sm);
+    box-shadow: 0 4px 16px rgba(54, 145, 191, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Change submenu active indicator color from white to blue */
+.bg-menu-theme .menu-inner>.menu-item.open .menu-item.open>.menu-toggle::before,
+.bg-menu-theme .menu-inner>.menu-item.open .menu-item.active>.menu-link::before {
+    box-shadow: 0 0 0 2px #3691bf !important;
+    background-color: #3691bf !important;
+}
+
+/* Additional styling for the active indicator dot */
+.menu-sub>.menu-item.active>.menu-link:not(.menu-toggle)::before {
+    background-color: var(--primary-blue) !important;
+    border: 3px solid rgba(54, 145, 191, 0.4) !important;
+    box-shadow: 0 0 0 2px rgba(54, 145, 191, 0.6) !important;
+}
+
+/* Hover state for submenu indicator */
+.menu-sub>.menu-item:hover>.menu-link::before {
+    background-color: rgba(54, 145, 191, 0.5) !important;
+    border: 3px solid rgba(54, 145, 191, 0.3) !important;
+}
