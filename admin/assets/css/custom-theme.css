@@ -418,9 +418,9 @@
     background-color: #d4ebf7 !important;
 }
 
-/* Menu Inner Shadow - Darker */
+/* Menu Inner Shadow - Hidden */
 .menu-inner-shadow {
-    background: linear-gradient(#0f2942 5%, rgba(15, 41, 66, 0.65) 95%, rgba(15, 41, 66, 0)) !important;
+    display: none !important;
 }
 
 /* Links */
