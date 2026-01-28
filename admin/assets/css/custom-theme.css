@@ -342,13 +342,25 @@
 /* Avatar Styles */
 .avatar {
     border-radius: 50%;
-    border: 2px solid var(--glass-border);
+    border: 2px solid var(--primary-blue);
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition: all var(--transition-fast);
+}
+
+.avatar:hover,
+.avatar:focus {
+    border-color: var(--primary-blue-dark);
+    box-shadow: 0 0 0 0.2rem rgba(54, 145, 191, 0.25);
+    transform: scale(1.05);
+}
+
+.avatar:active {
+    transform: scale(0.98);
 }
 
 .avatar img {
@@ -672,15 +684,52 @@ footer .container-xxl,
 .navbar .dropdown-menu {
     background-color: #0f2942 !important;
     border: 1px solid rgba(54, 145, 191, 0.3) !important;
+    padding: 0.5rem !important;
+    margin-top: 0.5rem !important;
+}
+
+.navbar .dropdown-menu.dropdown-menu-end {
+    margin-top: 0.5rem !important;
 }
 
 .navbar .dropdown-item {
     color: var(--lighter-blue) !important;
+    transition: all var(--transition-fast);
+    border-radius: var(--border-radius-sm);
+    margin: 0.25rem 0;
+    padding: 0.5rem 1rem;
 }
 
-.navbar .dropdown-item:hover {
-    background-color: rgba(54, 145, 191, 0.2) !important;
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    background: rgba(54, 145, 191, 0.3) !important;
+    backdrop-filter: blur(15px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(15px) saturate(180%) !important;
+    border: 1px solid rgba(54, 145, 191, 0.4) !important;
     color: var(--white) !important;
+    box-shadow: 0 4px 16px rgba(54, 145, 191, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Log Out Item - Red Color */
+.navbar .dropdown-item[href*="login"] {
+    color: rgba(var(--bs-danger-rgb), 1) !important;
+}
+
+.navbar .dropdown-item[href*="login"] .bx-power-off {
+    color: rgba(var(--bs-danger-rgb), 1) !important;
+}
+
+.navbar .dropdown-item[href*="login"]:hover,
+.navbar .dropdown-item[href*="login"]:focus {
+    background: rgba(var(--bs-danger-rgb), 0.2) !important;
+    border: 1px solid rgba(var(--bs-danger-rgb), 0.4) !important;
+    color: rgba(var(--bs-danger-rgb), 1) !important;
+}
+
+.navbar .dropdown-item[href*="login"]:hover .bx-power-off,
+.navbar .dropdown-item[href*="login"]:focus .bx-power-off {
+    color: rgba(var(--bs-danger-rgb), 1) !important;
 }
 
 /* Layout Page Padding Top for Desktop */
