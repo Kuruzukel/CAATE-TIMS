@@ -175,15 +175,53 @@
 }
 
 /* App Brand */
+.app-brand {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 1.5rem 1rem !important;
+    margin-bottom: 1rem !important;
+    min-height: 140px !important;
+}
+
+.app-brand-link {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
 .app-brand-text {
     color: var(--white) !important;
+    text-transform: uppercase !important;
+    margin-left: 0 !important;
+    margin-top: 0.75rem !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+}
+
+.app-brand-text.demo {
+    font-size: 1.25rem !important;
+}
+
+.app-brand-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .app-brand-logo img {
-    width: 40px;
-    height: 40px;
+    width: 100px !important;
+    height: 100px !important;
     border-radius: 50%;
     object-fit: cover;
+}
+
+/* Menu Inner Adjustment */
+.menu-inner {
+    padding-top: 0 !important;
 }
 
 /* Navbar Styles */
