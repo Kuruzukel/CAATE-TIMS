@@ -157,6 +157,52 @@
         inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
 }
 
+/* Menu Item Divider Lines */
+.menu-inner>.menu-item {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Remove default margin from menu items */
+.menu-vertical .menu-inner>.menu-item {
+    margin: 0 !important;
+}
+
+.menu-inner>.menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(54, 145, 191, 0.3) 20%,
+            rgba(54, 145, 191, 0.5) 50%,
+            rgba(54, 145, 191, 0.3) 80%,
+            transparent 100%);
+    box-shadow: 0 1px 2px rgba(54, 145, 191, 0.2);
+}
+
+/* Remove divider from last menu item */
+.menu-inner>.menu-item:last-child::after {
+    display: none;
+}
+
+/* Hide scrollbar for menu-inner */
+.menu-inner {
+    scrollbar-width: none !important;
+    /* Firefox */
+    -ms-overflow-style: none !important;
+    /* IE and Edge */
+}
+
+.menu-inner::-webkit-scrollbar {
+    display: none !important;
+    /* Chrome, Safari, Opera */
+}
+
 .menu-inner .menu-item .menu-link {
     color: var(--lighter-blue) !important;
     transition: all var(--transition-fast);
