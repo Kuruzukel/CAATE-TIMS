@@ -469,7 +469,24 @@ a:hover {
 
 /* Tables */
 .table-hover tbody tr:hover {
-    background-color: var(--lighter-blue) !important;
+    background-color: rgba(54, 145, 191, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    transition: all var(--transition-fast);
+}
+
+.table-hover tbody tr {
+    transition: all var(--transition-fast);
+}
+
+.table thead th {
+    color: var(--white) !important;
+    border-bottom: 2px solid rgba(54, 145, 191, 0.3) !important;
+}
+
+.table tbody td {
+    color: var(--white) !important;
+    border-bottom: 1px solid rgba(54, 145, 191, 0.1) !important;
 }
 
 /* Pagination */
