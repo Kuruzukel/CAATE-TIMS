@@ -1829,3 +1829,199 @@ body:has(.layout-menu.menu-hidden) .layout-container {
     height: auto !important;
     min-height: calc(1.5em + 1rem + 2px) !important;
 }
+
+
+/* ========================================
+   MODAL STYLING WITH COLOR PALETTE
+   ======================================== */
+
+/* Modal backdrop */
+.modal-backdrop {
+    background-color: rgba(22, 56, 86, 0.8) !important;
+    backdrop-filter: blur(4px) !important;
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #0f2942 !important;
+    background: linear-gradient(135deg, #0f2942 0%, #0a1f33 100%) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+    border: 1px solid rgba(54, 145, 191, 0.4) !important;
+    border-radius: var(--border-radius-md) !important;
+    box-shadow: 0 10px 40px rgba(22, 56, 86, 0.6),
+        0 4px 12px rgba(54, 145, 191, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+    color: var(--white) !important;
+}
+
+/* Modal header */
+.modal-header {
+    background: linear-gradient(135deg, rgba(54, 145, 191, 0.2) 0%, rgba(50, 85, 150, 0.2) 100%) !important;
+    border-bottom: 1px solid rgba(54, 145, 191, 0.3) !important;
+    padding: 1.25rem 1.5rem !important;
+}
+
+.modal-title {
+    color: var(--white) !important;
+    font-weight: 700 !important;
+    font-size: 1.25rem !important;
+}
+
+/* Modal close button */
+.modal-header .btn-close {
+    filter: invert(1) brightness(2) !important;
+    opacity: 0.8 !important;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 1 !important;
+}
+
+/* Modal body */
+.modal-body {
+    padding: 1.5rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Modal body headings */
+.modal-body h6 {
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom: 1px solid rgba(54, 145, 191, 0.2) !important;
+}
+
+/* Modal body text */
+.modal-body .row {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.modal-body strong {
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-weight: 600 !important;
+}
+
+/* Modal body all text elements */
+.modal-body .col-sm-4,
+.modal-body .col-sm-8,
+.modal-body div {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Modal form controls */
+.modal .form-control,
+.modal .form-select {
+    background-color: rgba(15, 41, 66, 0.6) !important;
+    background: linear-gradient(135deg, rgba(15, 41, 66, 0.6) 0%, rgba(10, 31, 51, 0.6) 100%) !important;
+    backdrop-filter: blur(10px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(10px) saturate(180%) !important;
+    border: 1px solid rgba(54, 145, 191, 0.3) !important;
+    border-radius: var(--border-radius-sm) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    padding: 0.5rem 0.875rem !important;
+}
+
+.modal .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.modal .form-control:focus,
+.modal .form-select:focus {
+    background-color: rgba(15, 41, 66, 0.8) !important;
+    border: 1px solid rgba(54, 145, 191, 0.6) !important;
+    box-shadow: 0 0 0 0.2rem rgba(54, 145, 191, 0.25) !important;
+    color: var(--white) !important;
+}
+
+/* Modal form labels */
+.modal .form-label {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Modal form select dropdown arrow */
+.modal .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%233691bf' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.75rem center !important;
+    background-size: 16px 12px !important;
+    padding-right: 2.5rem !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+/* Modal checkboxes and radio buttons */
+.modal .form-check-input {
+    background-color: rgba(15, 41, 66, 0.6) !important;
+    border: 1px solid rgba(54, 145, 191, 0.4) !important;
+}
+
+.modal .form-check-input:checked {
+    background-color: var(--primary-blue) !important;
+    border-color: var(--primary-blue) !important;
+}
+
+.modal .form-check-label {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Modal alerts */
+.modal .alert {
+    background: linear-gradient(135deg, rgba(54, 145, 191, 0.15) 0%, rgba(50, 85, 150, 0.15) 100%) !important;
+    border: 1px solid rgba(54, 145, 191, 0.3) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: var(--border-radius-sm) !important;
+}
+
+.modal .alert-secondary {
+    background: linear-gradient(135deg, rgba(100, 116, 139, 0.15) 0%, rgba(71, 85, 105, 0.15) 100%) !important;
+    border: 1px solid rgba(100, 116, 139, 0.3) !important;
+}
+
+/* Modal footer */
+.modal-footer {
+    background: linear-gradient(135deg, rgba(54, 145, 191, 0.1) 0%, rgba(50, 85, 150, 0.1) 100%) !important;
+    border-top: 1px solid rgba(54, 145, 191, 0.3) !important;
+    padding: 1rem 1.5rem !important;
+}
+
+/* Modal buttons */
+.modal .btn-outline-secondary {
+    background: transparent !important;
+    border: 1px solid rgba(54, 145, 191, 0.4) !important;
+    color: rgba(54, 145, 191, 0.9) !important;
+}
+
+.modal .btn-outline-secondary:hover {
+    background: rgba(54, 145, 191, 0.2) !important;
+    border: 1px solid rgba(54, 145, 191, 0.6) !important;
+    color: var(--white) !important;
+}
+
+/* Modal readonly inputs */
+.modal .form-control[readonly] {
+    background-color: rgba(15, 41, 66, 0.4) !important;
+    border: 1px solid rgba(54, 145, 191, 0.2) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Modal text muted */
+.modal .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Modal small text */
+.modal small {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Modal hr divider */
+.modal hr {
+    border-top: 1px solid rgba(54, 145, 191, 0.3) !important;
+    opacity: 1 !important;
+}
