@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book an Appointment - CAATE</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../img/CAATELOGOROUNDED.png" type="image/png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../assets/css/appointment-form.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-content">
+            <a href="admission.html" class="navbar-logo">
+                <img src="../../img/ROUNDCAATELOGO.png" alt="CAATE Logo" class="navbar-logo-img">
+            </a>
+
+            <span class="navbar-center-text"><span class="navbar-full-text">Creative Aesthetics Academy and Technical
+                    Education Inc.</span><span class="navbar-short-text">CAATE</span></span>
+
+            <div class="navbar-actions">
+                <a href="../../public/components/index.html#services" class="btn btn-primary">
+                    <i class="fas fa-arrow-left"></i>
+                    Back
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="navbar-actions">
+            <a href="../../public/components/index.html#services" class="btn btn-primary">
+                <i class="fas fa-arrow-left"></i>
+                Back
+            </a>
+        </div>
+    </div>
+
+    <!-- Appointment Hero Section -->
+    <section class="course-hero dark-section">
+        <div class="container">
+            <div class="course-hero-content">
+                <span class="course-badge">APPOINTMENT BOOKING</span>
+                <h1 class="course-hero-title">Book Your Beauty Care Appointment</h1>
+                <p class="course-hero-description">
+                    Schedule your personalized beauty care service with our expert therapists. Choose your preferred
+                    service, date, and time for a convenient appointment experience.
+                </p>
+                <div class="course-hero-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Easy Scheduling</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>Expert Therapists</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Flexible Timing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Appointment Form -->
+            <div class="appointment-form-container">
+                <form id="appointmentForm" class="appointment-form">
+                    <!-- Personal Information Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-user"></i>
+                            Personal Information
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullName" name="fullName" required autocomplete="name"
+                                    placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactNumber">Contact Number <span class="required">*</span></label>
+                                <input type="tel" id="contactNumber" name="contactNumber" required autocomplete="tel"
+                                    placeholder="09XX XXX XXXX">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required autocomplete="email"
+                                    placeholder="your.email@example.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Details Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-spa"></i>
+                            Service Details
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="serviceCategory">Service Category <span class="required">*</span></label>
+                                <select id="serviceCategory" name="serviceCategory" required autocomplete="off">
+                                    <option value="">Select a category</option>
+                                    <option value="skincare">Skin Care</option>
+                                    <option value="haircare">Hair Care</option>
+                                    <option value="nailcare">Nail Care</option>
+                                    <option value="bodytreatment">Body Treatment</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceType">Service Type <span class="required">*</span></label>
+                                <select id="serviceType" name="serviceType" required disabled autocomplete="off">
+                                    <option value="">Select a service type</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Appointment Details Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-calendar-alt"></i>
+                            Appointment Details
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Date <span class="required">*</span></label>
+                                <input type="date" id="preferredDate" name="preferredDate" required autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredTime">Preferred Time <span class="required">*</span></label>
+                                <select id="preferredTime" name="preferredTime" required autocomplete="off">
+                                    <option value="">Select a time</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="13:00">01:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="therapistPreference">Therapist Preference (Optional)</label>
+                                <select id="therapistPreference" name="therapistPreference" autocomplete="off">
+                                    <option value="">No preference</option>
+                                    <option value="therapist1">Therapist 1</option>
+                                    <option value="therapist2">Therapist 2</option>
+                                    <option value="therapist3">Therapist 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="branchRoom">Branch / Room (Optional)</label>
+                                <select id="branchRoom" name="branchRoom" autocomplete="off">
+                                    <option value="">Select branch/room</option>
+                                    <option value="main-branch">Main Branch</option>
+                                    <option value="room-1">Room 1</option>
+                                    <option value="room-2">Room 2</option>
+                                    <option value="room-3">Room 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-info-circle"></i>
+                            Additional Information
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="specialNotes">Special Notes / Skin Concerns</label>
+                                <textarea id="specialNotes" name="specialNotes" rows="4" autocomplete="off"
+                                    placeholder="Please share any allergies, skin concerns, or special requests..."></textarea>
+                            </div>
+                            <div class="form-group full-width">
+                                <label>First-time Client? <span class="required">*</span></label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" id="firstTimeClientYes" name="firstTimeClient" value="yes"
+                                            required>
+                                        <span>Yes</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" id="firstTimeClientNo" name="firstTimeClient" value="no"
+                                            required>
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consent Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-shield-alt"></i>
+                            Consent
+                        </h3>
+                        <div class="consent-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="consentAgreement" name="consentAgreement" required>
+                                <span>I agree to the <a href="consent-form.html" target="_blank">treatment consent</a>
+                                    and <a href="#" target="_blank">data privacy policy</a></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-calendar-check"></i>
+                            Book Appointment
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="main-course-hero-lower-curl">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="display: block; width: 100%; height: 60px">
+                <path d="M0,60 Q180,100 360,60 T720,60 T1080,60 T1440,60 L1440,120 L0,120 Z" fill="#0d2538"
+                    opacity="0.5" />
+                <path d="M0,80 Q180,40 360,80 T720,80 T1080,80 T1440,80 L1440,120 L0,120 Z" fill="#0d2538"
+                    opacity="0.7" />
+                <path d="M0,100 Q180,60 360,100 T720,100 T1080,100 T1440,100 L1440,120 L0,120 Z" fill="#0d2538" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../../img/ROUNDCAATELOGO.png" alt="CAATE Logo" class="footer-logo-img">
+                    <p>
+                        Creative Aesthetics Academy and Technical Education Inc. is a TESDA-accredited institution
+                        committed to
+                        producing world-class beauty and aesthetic professionals.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/CreativeAestheticAcademy" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="mailto:creativeaestheticacademy@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../public/components/index.html">Home</a></li>
+                        <li><a href="../../public/components/index.html#about">About Us</a></li>
+                        <li><a href="../../public/components/index.html#courses">Courses</a></li>
+                        <li><a href="../../public/components/index.html#services">Services</a></li>
+                        <li><a href="../../public/components/index.html#footer">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../public/components/nailcare.html">Nail Care Services NC II</a></li>
+                        <li><a href="../../public/components/skincare.html">Skin Care Services NC II</a></li>
+                        <li><a href="../../public/components/aesthetic.html">Aesthetic Services Level III</a></li>
+                        <li><a href="../../public/components/advanced-skincare.html">Advanced Skin Care Level III</a>
+                        </li>
+                        <li><a href="../../public/components/permanent-makeup.html">Permanent Make-Up Tattoo Level
+                                III</a></li>
+                        <li><a href="../../public/components/collagen-hairloss.html">Collagen Induction & Hair Loss
+                                Treatment</a></li>
+                        <li><a href="../../public/components/facial-peeling.html">Advanced Facial & Chemical Skin
+                                Peeling</a></li>
+                        <li><a href="../../public/components/light-heat-therapy.html">Light Therapy & Heat Therapy</a>
+                        </li>
+                        <li><a href="../../public/components/trainers.html">Trainers Methodology Level I</a></li>
+                        <li><a href="../../public/components/eyelash-eyebrow.html">Eyelash & Eyebrow Services Level
+                                III</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--primary-blue);"></i>
+                            Arayat, Pampanga
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt" style="margin-right: 8px; color: var(--primary-blue);"></i>
+                            <a href="tel:09681002025">0968 100 2025</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt" style="margin-right: 8px; color: var(--primary-blue);"></i>
+                            <a href="tel:09681802025">0968 180 2025</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope" style="margin-right: 8px; color: var(--primary-blue);"></i>
+                            <a href="mailto:creativeaestheticacademy@gmail.com">Email Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Creative Aesthetics Academy and Technical Education Inc. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/apppoinrment-form.js"></script>
+</body>
+
+</html>
