@@ -7,7 +7,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>CAATE | Manage Profile</title>
+    <title>CAATE | CAATE Inventory</title>
 
     <meta name="description" content="" />
 
@@ -32,6 +32,9 @@
 
     <!-- CAATE Custom Theme -->
     <link rel="stylesheet" href="../assets/css/custom-theme.css" />
+
+    <!-- CAATE Inventory CSS -->
+    <link rel="stylesheet" href="../assets/css/caate-inventory.css" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
@@ -102,7 +105,7 @@
                     </li>
 
                     <!-- Inventory Management -->
-                    <li class="menu-item"><a href="javascript:void(0);" class="menu-link menu-toggle"><i
+                    <li class="menu-item open"><a href="javascript:void(0);" class="menu-link menu-toggle"><i
                                 class="menu-icon tf-icons bx bx-package"></i>
                             <div data-i18n="Inventory Management">Asset Inventory</div>
                         </a>
@@ -110,20 +113,20 @@
                             <li class="menu-item"><a href="audit-inventory.html" class="menu-link">
                                     <div data-i18n="Audit Inventory">Audit Inventory</div>
                                 </a></li>
-                            <li class="menu-item"><a href="caate-inventory.html" class="menu-link">
+                            <li class="menu-item active"><a href="caate-inventory.html" class="menu-link">
                                     <div data-i18n="CAATE Inventory">CAATE Inventory</div>
                                 </a></li>
                         </ul>
                     </li>
 
                     <!-- Settings -->
-                    <li class="menu-item active open">
+                    <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-cog"></i>
                             <div data-i18n="Settings">Settings</div>
                         </a>
                         <ul class="menu-sub">
-                            <li class="menu-item active">
+                            <li class="menu-item">
                                 <a href="manage-profile.html" class="menu-link">
                                     <div data-i18n="Manage Profile">Manage Profile</div>
                                 </a>
@@ -156,8 +159,9 @@
                             <div class="nav-item d-flex align-items-center position-relative">
                                 <i class="bx bx-search fs-4 lh-0 position-absolute"
                                     style="left: 12px; z-index: 10;"></i>
-                                <input type="text" class="form-control border-0 shadow-none" placeholder="Search..."
-                                    aria-label="Search..." style="padding-left: 40px;" />
+                                <input type="text" class="form-control border-0 shadow-none"
+                                    placeholder="Search inventory..." aria-label="Search..."
+                                    style="padding-left: 40px;" />
                             </div>
                         </div>
                         <!-- /Search -->
@@ -211,183 +215,163 @@
                     <!-- Content -->
                     <div class="container-xxl flex-grow-1 container-p-y">
 
-                        <!-- Profile Overview Card -->
+                        <!-- Inventory Dashboard Statistics -->
                         <div class="row mb-4">
-                            <div class="col-12">
+                            <div class="col-lg-3 col-md-6 col-6 mb-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="row">
-                                            <!-- Profile Picture Section -->
-                                            <div class="col-lg-4 text-center border-end">
-                                                <div class="mb-3">
-                                                    <img src="../assets/images/AVATARNIKEL.jpg" alt="Profile Picture"
-                                                        class="rounded-circle"
-                                                        style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3691bf;">
-                                                </div>
-                                                <button type="button" class="btn btn-primary btn-sm mb-2">
-                                                    <i class="bx bx-upload"></i> Change Photo
-                                                </button>
-                                                <p class="text-muted small">Allowed JPG, PNG. Max size of 2MB</p>
-                                            </div>
-
-                                            <!-- Profile Information Section -->
-                                            <div class="col-lg-8">
-                                                <h4 class="mb-4">Profile Overview</h4>
-                                                <div class="row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label class="form-label fw-semibold">
-                                                            <i class="bx bx-user me-2"></i>Full Name
-                                                        </label>
-                                                        <p class="form-control-plaintext">KEL</p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label class="form-label fw-semibold">
-                                                            <i class="bx bx-briefcase me-2"></i>Role
-                                                        </label>
-                                                        <p class="form-control-plaintext">
-                                                            <span class="badge bg-primary">Administrator</span>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label class="form-label fw-semibold">
-                                                            <i class="bx bx-envelope me-2"></i>Email Address
-                                                        </label>
-                                                        <p class="form-control-plaintext">kel.admin@caate.edu.ph</p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label class="form-label fw-semibold">
-                                                            <i class="bx bx-check-circle me-2"></i>Account Status
-                                                        </label>
-                                                        <p class="form-control-plaintext">
-                                                            <span class="badge bg-success">Active</span>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <label class="form-label fw-semibold">
-                                                            <i class="bx bx-log-in me-2"></i>Last Login
-                                                        </label>
-                                                        <p class="form-control-plaintext">
-                                                            January 28, 2026 - 09:15 AM
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label class="form-label fw-semibold">
-                                                            <i class="bx bx-log-out me-2"></i>Last Logout
-                                                        </label>
-                                                        <p class="form-control-plaintext">
-                                                            January 27, 2026 - 06:30 PM
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                        <div class="card-title d-flex align-items-start justify-content-between">
+                                            <div class="avatar flex-shrink-0">
+                                                <i class="bx bx-package" style="font-size: 2rem; color: #3b82f6;"></i>
                                             </div>
                                         </div>
+                                        <span class="fw-semibold d-block mb-1">Total Items</span>
+                                        <h3 class="card-title mb-2">1,248</h3>
+                                        <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +45
+                                            this month</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title d-flex align-items-start justify-content-between">
+                                            <div class="avatar flex-shrink-0">
+                                                <i class="bx bx-check-circle"
+                                                    style="font-size: 2rem; color: #10b981;"></i>
+                                            </div>
+                                        </div>
+                                        <span class="fw-semibold d-block mb-1">In Stock</span>
+                                        <h3 class="card-title mb-2">1,089</h3>
+                                        <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i>
+                                            Available</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title d-flex align-items-start justify-content-between">
+                                            <div class="avatar flex-shrink-0">
+                                                <i class="bx bx-error-circle"
+                                                    style="font-size: 2rem; color: #f59e0b;"></i>
+                                            </div>
+                                        </div>
+                                        <span class="fw-semibold d-block mb-1">Low Stock</span>
+                                        <h3 class="card-title mb-2">24</h3>
+                                        <small class="text-warning fw-semibold"><i class="bx bx-right-arrow-alt"></i>
+                                            Needs Reorder</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title d-flex align-items-start justify-content-between">
+                                            <div class="avatar flex-shrink-0">
+                                                <i class="bx bx-x-circle" style="font-size: 2rem; color: #ef4444;"></i>
+                                            </div>
+                                        </div>
+                                        <span class="fw-semibold d-block mb-1">Out of Stock</span>
+                                        <h3 class="card-title mb-2">12</h3>
+                                        <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i>
+                                            Critical</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Personal Information Card -->
+                        <!-- Equipment List -->
                         <div class="row mb-4">
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between align-items-center">
-                                        <h5 class="mb-0">Personal Information</h5>
+                                        <h5 class="mb-0">Equipment List</h5>
                                         <button type="button" class="btn btn-primary btn-sm">
-                                            <i class="bx bx-edit"></i> Edit Information
+                                            <i class="bx bx-plus"></i> Add Equipment
                                         </button>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label class="form-label fw-semibold">First Name</label>
-                                                <input type="text" class="form-control" value="KEL" readonly>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label fw-semibold">Last Name</label>
-                                                <input type="text" class="form-control" value="Admin" readonly>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label class="form-label fw-semibold">Phone Number</label>
-                                                <input type="text" class="form-control" value="+63 912 345 6789"
-                                                    readonly>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label fw-semibold">Department</label>
-                                                <input type="text" class="form-control" value="Administration" readonly>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <label class="form-label fw-semibold">Address</label>
-                                                <textarea class="form-control" rows="2"
-                                                    readonly>Creative Aesthetic Academy & Technical Education Inc., Philippines</textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Login History Card -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="mb-0">Recent Login History</h5>
                                     </div>
                                     <div class="card-body">
                                         <div class="table-responsive text-nowrap">
                                             <table class="table table-hover">
                                                 <thead>
                                                     <tr>
-                                                        <th>Date & Time</th>
-                                                        <th>Action</th>
-                                                        <th>IP Address</th>
-                                                        <th>Device</th>
+                                                        <th>Equipment Name</th>
+                                                        <th>Category</th>
+                                                        <th>Quantity</th>
                                                         <th>Status</th>
+                                                        <th>Actions</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody class="table-border-bottom-0">
                                                     <tr>
-                                                        <td><strong>Jan 28, 2026 - 09:15 AM</strong></td>
-                                                        <td><span class="badge bg-success">Login</span></td>
-                                                        <td>192.168.1.100</td>
-                                                        <td>Windows 11 - Chrome</td>
-                                                        <td><span class="badge bg-success">Success</span></td>
+                                                        <td><strong>Facial Steamer</strong></td>
+                                                        <td>Skin Care Equipment</td>
+                                                        <td>8 units</td>
+                                                        <td><span class="badge bg-success">In Stock</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button"
+                                                                    class="btn p-0 dropdown-toggle hide-arrow"
+                                                                    data-bs-toggle="dropdown">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item"
+                                                                        href="javascript:void(0);"><i
+                                                                            class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                                    <a class="dropdown-item"
+                                                                        href="javascript:void(0);"><i
+                                                                            class="bx bx-show me-1"></i> View</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td><strong>Jan 27, 2026 - 06:30 PM</strong></td>
-                                                        <td><span class="badge bg-danger">Logout</span></td>
-                                                        <td>192.168.1.100</td>
-                                                        <td>Windows 11 - Chrome</td>
-                                                        <td><span class="badge bg-success">Success</span></td>
+                                                        <td><strong>UV Sterilizer</strong></td>
+                                                        <td>Nail Care Equipment</td>
+                                                        <td>12 units</td>
+                                                        <td><span class="badge bg-success">In Stock</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button"
+                                                                    class="btn p-0 dropdown-toggle hide-arrow"
+                                                                    data-bs-toggle="dropdown">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item"
+                                                                        href="javascript:void(0);"><i
+                                                                            class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                                    <a class="dropdown-item"
+                                                                        href="javascript:void(0);"><i
+                                                                            class="bx bx-show me-1"></i> View</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td><strong>Jan 27, 2026 - 08:00 AM</strong></td>
-                                                        <td><span class="badge bg-success">Login</span></td>
-                                                        <td>192.168.1.100</td>
-                                                        <td>Windows 11 - Chrome</td>
-                                                        <td><span class="badge bg-success">Success</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><strong>Jan 26, 2026 - 05:45 PM</strong></td>
-                                                        <td><span class="badge bg-danger">Logout</span></td>
-                                                        <td>192.168.1.100</td>
-                                                        <td>Windows 11 - Chrome</td>
-                                                        <td><span class="badge bg-success">Success</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><strong>Jan 26, 2026 - 07:30 AM</strong></td>
-                                                        <td><span class="badge bg-success">Login</span></td>
-                                                        <td>192.168.1.100</td>
-                                                        <td>Windows 11 - Chrome</td>
-                                                        <td><span class="badge bg-success">Success</span></td>
+                                                        <td><strong>Microdermabrasion Machine</strong></td>
+                                                        <td>Advanced Skin Care</td>
+                                                        <td>3 units</td>
+                                                        <td><span class="badge bg-label-warning">Low Stock</span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button type="button"
+                                                                    class="btn p-0 dropdown-toggle hide-arrow"
+                                                                    data-bs-toggle="dropdown">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item"
+                                                                        href="javascript:void(0);"><i
+                                                                            class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                                    <a class="dropdown-item"
+                                                                        href="javascript:void(0);"><i
+                                                                            class="bx bx-show me-1"></i> View</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -436,6 +420,9 @@
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
+
+    <!-- CAATE Inventory JS -->
+    <script src="../assets/js/caate-inventory.js"></script>
 </body>
 
 </html>
