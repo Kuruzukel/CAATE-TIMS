@@ -1,54 +1,57 @@
-# 🎓 CAATE-ITRMS - Creative Aesthetic Academy & Technical Education Inc. Integrated Training & Resource Management System
+# CAATE-ITRMS
 
-> A comprehensive, professional-grade training management and inventory system for CAATE Inc. (Creative Aesthetic Academy & Technical Education Inc.). Designed for seamless administration of courses, trainees, schedules, competencies, and inventory across multiple user roles.
+## Creative Aesthetic Academy & Technical Education Inc. Integrated Training & Resource Management System
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
-[![Node.js](https://img.shields.io/badge/Node.js-v14+-green?style=flat-square)](https://nodejs.org)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-February%202026-orange?style=flat-square)](https://github.com)
+A comprehensive, professional-grade training management and inventory system designed for seamless administration of courses, trainees, schedules, competencies, and inventory across multiple user roles.
 
-**Developer:** [KEL TO ROR](https://github.com)
+[![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=for-the-badge)](https://github.com)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-v14+-green?style=for-the-badge)](https://nodejs.org)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-February%202026-orange?style=for-the-badge)](https://github.com/Kuruzukel)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## � Quick Navigation
 
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Applications](#applications)
-- [Getting Started](#getting-started)
-- [Development](#development)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
+| Section            | Link                       |
+| ------------------ | -------------------------- |
+| 🎯 Overview        | [View](#overview)          |
+| ✨ Features        | [View](#features)          |
+| 🛠️ Tech Stack      | [View](#tech-stack)        |
+| 📁 Structure       | [View](#project-structure) |
+| 🚀 Applications    | [View](#applications)      |
+| 🎬 Getting Started | [View](#getting-started)   |
+| 💻 Development     | [View](#development)       |
+| 📚 Documentation   | [View](#documentation)     |
 
 ---
 
-## 🎯 Overview
+## Overview
 
 CAATE-ITRMS is an enterprise-level training management platform that combines administrative dashboards, student portals, public information systems, and comprehensive inventory management. Built with modern web technologies, it provides a seamless experience for administrators, trainees, and the public.
 
 ### Key Capabilities
 
-- 🏢 **Multi-role Administration** - Admin, Trainee, and Public interfaces
-- 📚 **Course Management** - 10+ professional courses with detailed information
-- 👥 **Trainee Management** - Complete lifecycle from admission to graduation
-- 📊 **Inventory Tracking** - Audit and CAATE inventory management
-- 📅 **Schedule Management** - Advanced scheduling and calendar features
-- 🎓 **Competency Framework** - Competency tracking and assessment
-- 🔐 **Secure Authentication** - Comprehensive auth and admission workflow
-- 📱 **Responsive Design** - Works seamlessly on all devices
+- 🏢 **Multi-role Administration** — Admin, Trainee, and Public interfaces
+- 📚 **Course Management** — 10+ professional courses with detailed information
+- 👥 **Trainee Management** — Complete lifecycle from admission to graduation
+- 📊 **Inventory Tracking** — Audit and CAATE inventory management
+- 📅 **Schedule Management** — Advanced scheduling and calendar features
+- 🎓 **Competency Framework** — Competency tracking and assessment
+- 🔐 **Secure Authentication** — Comprehensive auth and admission workflow
+- 📱 **Responsive Design** — Works seamlessly on all devices
 
 ---
 
-## ✨ Features
+## Features
 
 ### 🔧 Admin Dashboard
+
+Comprehensive administrative interface with real-time analytics and management tools.
 
 - Real-time analytics and metrics
 - Competencies management
@@ -59,10 +62,12 @@ CAATE-ITRMS is an enterprise-level training management platform that combines ad
 - Attendance records
 - Enrollment processing
 - Application management
-- **Inventory Management** (Audit & CAATE)
+- Inventory Management (Audit & CAATE)
 - Profile management
 
 ### 🔐 Authentication & Admission
+
+Secure user authentication with complete admission workflow.
 
 - Secure user login & registration
 - Password recovery system
@@ -74,6 +79,8 @@ CAATE-ITRMS is an enterprise-level training management platform that combines ad
 
 ### 🌐 Public Portal
 
+Professional public-facing website showcasing courses and programs.
+
 - Professional landing page
 - 10 course information pages
 - Trainer directory
@@ -82,6 +89,8 @@ CAATE-ITRMS is an enterprise-level training management platform that combines ad
 - SEO optimized
 
 ### 👨‍🎓 Trainee Portal
+
+Student dashboard for course management and profile administration.
 
 - Personal dashboard
 - Course enrollment tracking
@@ -92,7 +101,7 @@ CAATE-ITRMS is an enterprise-level training management platform that combines ad
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend Technologies
 
@@ -116,75 +125,65 @@ CAATE-ITRMS is an enterprise-level training management platform that combines ad
 | **npm**     | Package management                |
 | **Node.js** | JavaScript runtime (v14+)         |
 
-### Development Stack
-
-| Category            | Tools                 |
-| ------------------- | --------------------- |
-| **Version Control** | Git, GitHub           |
-| **Code Editor**     | VS Code (recommended) |
-| **Package Manager** | npm, yarn             |
-| **Build System**    | Webpack, Gulp         |
-| **Task Runner**     | npm scripts           |
-
 ### Browser Support
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers
+- ✅ Chrome (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Edge (latest)
+- ✅ Mobile browsers
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 CAATE-ITRMS/
-├── 📂 admin/                          # Admin Dashboard Application
+│
+├── 📂 admin/
 │   ├── src/
 │   │   ├── pages/                    # 15 admin pages
 │   │   └── assets/                   # CSS, JS, images
 │   ├── package.json
 │   └── README.md
 │
-├── 📂 auth/                           # Authentication & Admission System
+├── 📂 auth/
 │   ├── src/
 │   │   ├── pages/                    # 7 auth pages
 │   │   └── assets/                   # CSS, JS, fonts
 │   ├── package.json
 │   └── README.md
 │
-├── 📂 public/                         # Public Website & Course Portal
+├── 📂 public/
 │   ├── src/
 │   │   ├── pages/                    # 11 public pages
 │   │   └── assets/                   # CSS, JS, images
 │   ├── package.json
 │   └── README.md
 │
-├── 📂 trainee/                        # Trainee/Student Portal
+├── 📂 trainee/
 │   ├── src/
 │   │   ├── pages/                    # 6 trainee pages
 │   │   └── assets/                   # CSS, JS, images
 │   ├── package.json
 │   └── README.md
 │
-├── 📂 img/                            # Shared Assets (46 files)
+├── 📂 img/
 │   ├── CAATE FB COURSES/              # Course promotional images
 │   ├── GRADUATES/                     # Graduate photos
 │   ├── CAATE Logos/                   # CAATE branding
 │   ├── TESDA Logos/                   # TESDA branding
 │   └── README.md
 │
-├── 📄 README.md                       # Main documentation (this file)
-├── 📄 CLEANUP_SUMMARY.md              # Project cleanup report
-└── 📄 package.json                    # Root dependencies (if applicable)
+├── 📄 README.md                       # Main documentation
+└── 📄 package.json                    # Root dependencies
 ```
 
 ---
 
-## 🚀 Applications
+## Applications
 
-### 1. **Admin Dashboard** (`admin/`)
+### 1. Admin Dashboard
 
 Professional administration interface for managing all aspects of the training center.
 
@@ -192,7 +191,7 @@ Professional administration interface for managing all aspects of the training c
 
 [📖 Full Documentation](admin/README.md)
 
-### 2. **Authentication System** (`auth/`)
+### 2. Authentication System
 
 Secure authentication and comprehensive admission workflow.
 
@@ -200,7 +199,7 @@ Secure authentication and comprehensive admission workflow.
 
 [📖 Full Documentation](auth/README.md)
 
-### 3. **Public Portal** (`public/`)
+### 3. Public Portal
 
 Public-facing website showcasing courses and training programs.
 
@@ -208,7 +207,7 @@ Public-facing website showcasing courses and training programs.
 
 [📖 Full Documentation](public/README.md)
 
-### 4. **Trainee Portal** (`trainee/`)
+### 4. Trainee Portal
 
 Student dashboard for course management and profile administration.
 
@@ -218,7 +217,7 @@ Student dashboard for course management and profile administration.
 
 ---
 
-## 🎬 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -267,7 +266,7 @@ npm run lint         # Run linter (if configured)
 
 ---
 
-## 💻 Development
+## Development
 
 ### Project Architecture
 
@@ -327,30 +326,42 @@ npm run watch
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 ### Main Documentation
 
-- **[README.md](README.md)** - Project overview (this file)
-- **[CLEANUP_SUMMARY.md](CLEANUP_SUMMARY.md)** - Project cleanup report
+- **[README.md](README.md)** — Project overview (this file)
 
 ### Application Documentation
 
-- **[admin/README.md](admin/README.md)** - Admin dashboard guide
-- **[auth/README.md](auth/README.md)** - Authentication system guide
-- **[public/README.md](public/README.md)** - Public portal guide
-- **[trainee/README.md](trainee/README.md)** - Trainee portal guide
-- **[img/README.md](img/README.md)** - Asset management guide
+- **[admin/README.md](admin/README.md)** — Admin dashboard guide
+- **[auth/README.md](auth/README.md)** — Authentication system guide
+- **[public/README.md](public/README.md)** — Public portal guide
+- **[trainee/README.md](trainee/README.md)** — Trainee portal guide
+- **[img/README.md](img/README.md)** — Asset management guide
 
 ### Additional Resources
 
-- `admin/docs/STRUCTURE.md` - Detailed structure documentation
-- `admin/docs/QUICK_START.md` - Quick start guide
-- `admin/docs/MIGRATION_GUIDE.md` - Migration information
+- `admin/docs/STRUCTURE.md` — Detailed structure documentation
+- `admin/docs/QUICK_START.md` — Quick start guide
+- `admin/docs/MIGRATION_GUIDE.md` — Migration information
 
 ---
 
-## 🤝 Contributing
+## Project Statistics
+
+| Metric                  | Count              |
+| ----------------------- | ------------------ |
+| **Total Pages**         | 39 HTML pages      |
+| **Applications**        | 4 independent apps |
+| **CSS Files**           | 25+ stylesheets    |
+| **JavaScript Files**    | 30+ scripts        |
+| **Shared Assets**       | 46 files           |
+| **Documentation Files** | 5 README files     |
+
+---
+
+## Contributing
 
 Contributions are welcome! Please follow these guidelines:
 
@@ -369,60 +380,33 @@ Contributions are welcome! Please follow these guidelines:
 
 ---
 
-## 📊 Project Statistics
-
-| Metric                  | Count              |
-| ----------------------- | ------------------ |
-| **Total Pages**         | 39 HTML pages      |
-| **Applications**        | 4 independent apps |
-| **CSS Files**           | 25+ stylesheets    |
-| **JavaScript Files**    | 30+ scripts        |
-| **Shared Assets**       | 46 files           |
-| **Documentation Files** | 6 README files     |
-
----
-
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👨‍💻 Developer
+## Contact & Support
 
-**KEL TO ROR**
-
-- GitHub: [@keltoror](https://github.com)
-- Email: [contact@example.com](mailto:contact@example.com)
-
----
-
-## 🙏 Acknowledgments
-
-- **CAATE** - Center for Aesthetic and Advanced Training Excellence
-- **TESDA** - Technical Education and Skills Development Authority
-- **Bootstrap** - For the excellent UI framework
-- **Open Source Community** - For amazing tools and libraries
-
----
-
-## 📞 Support
+**Developer:** KEL TO YAHHHH!  
+**Email:** [mikasaackerman.jme@gmail.com](mailto:mikasaackerman.jme@gmail.com)  
+**GitHub:** [@Kuruzukel](https://github.com/Kuruzukel)
 
 For issues, questions, or suggestions:
 
 1. Check the [Documentation](#documentation) section
 2. Review application-specific README files
 3. Open an issue on GitHub
-4. Contact the developer
+4. Contact the developer via email
 
 ---
 
 <div align="center">
 
-### Made with ❤️ by KEL TO ROR
+---
 
 **CAATE-ITRMS** © 2026 | All Rights Reserved
 
-[⬆ Back to Top](#-caate-itrms---creative-aesthetic-academy--technical-education-inc-integrated-training--resource-management-system)
+[↑ Back to Top](#-caate-itrms)
 
 </div>
