@@ -855,36 +855,36 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-6">
-                            <img id="modalGraduateImage" src="" alt="Graduate Photo" class="img-fluid"
-                                style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 8px;">
+                        <div class="col-md-6 mb-3">
+                            <div class="text-center">
+                                <img id="modalGraduateImage" src="" alt="Graduate Photo" class="img-fluid"
+                                    style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 8px;">
+                            </div>
                         </div>
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h3 id="modalGraduateName" class="mb-4"
-                                style="color: rgba(255, 255, 255, 0.9); font-weight: 600;"></h3>
-
+                        <div class="col-md-6">
                             <div class="mb-3">
-                                <label class="form-label fw-semibold" style="color: rgba(255, 255, 255, 0.7);">Student
-                                    ID:</label>
-                                <p id="modalGraduateId" class="mb-0" style="color: rgba(255, 255, 255, 0.9);"></p>
+                                <label class="form-label">FULL NAME</label>
+                                <input type="text" class="form-control" id="modalGraduateName" readonly>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label fw-semibold"
-                                    style="color: rgba(255, 255, 255, 0.7);">Graduation Date:</label>
-                                <p id="modalGraduateDate" class="mb-0" style="color: rgba(255, 255, 255, 0.9);"></p>
+                                <label class="form-label">STUDENT ID</label>
+                                <input type="text" class="form-control" id="modalGraduateId" readonly>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label fw-semibold"
-                                    style="color: rgba(255, 255, 255, 0.7);">Course:</label>
-                                <p id="modalGraduateCourse" class="mb-0" style="color: rgba(255, 255, 255, 0.9);"></p>
+                                <label class="form-label">COURSE</label>
+                                <input type="text" class="form-control" id="modalGraduateCourse" readonly>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label fw-semibold"
-                                    style="color: rgba(255, 255, 255, 0.7);">Email:</label>
-                                <p id="modalGraduateEmail" class="mb-0" style="color: rgba(255, 255, 255, 0.9);"></p>
+                                <label class="form-label">GRADUATION DATE</label>
+                                <input type="text" class="form-control" id="modalGraduateDate" readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">EMAIL</label>
+                                <input type="text" class="form-control" id="modalGraduateEmail" readonly>
                             </div>
                         </div>
                     </div>
@@ -1001,11 +1001,11 @@
                 const email = this.getAttribute('data-email');
                 const image = this.getAttribute('data-image');
 
-                document.getElementById('modalGraduateName').textContent = name;
-                document.getElementById('modalGraduateId').textContent = id;
-                document.getElementById('modalGraduateCourse').textContent = course;
-                document.getElementById('modalGraduateDate').textContent = graduated;
-                document.getElementById('modalGraduateEmail').textContent = email;
+                document.getElementById('modalGraduateName').value = name;
+                document.getElementById('modalGraduateId').value = id;
+                document.getElementById('modalGraduateCourse').value = course;
+                document.getElementById('modalGraduateDate').value = graduated;
+                document.getElementById('modalGraduateEmail').value = email;
                 document.getElementById('modalGraduateImage').src = image;
             });
         });
