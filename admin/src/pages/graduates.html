@@ -53,6 +53,11 @@
             color: #ffffff !important;
             font-weight: 500;
         }
+
+        /* Pagination hover effects */
+        .pagination .page-link {
+            transition: all 0.3s ease !important;
+        }
     </style>
 </head>
 
@@ -1746,6 +1751,42 @@
             // Initialize pagination
             showPage(1);
 
+            // Add hover effects to pagination buttons
+            document.querySelectorAll('.pagination .page-item:not(.disabled):not(.active) .page-link').forEach(link => {
+                link.addEventListener('mouseenter', function () {
+                    if (!this.parentElement.classList.contains('active') && !this.parentElement.classList.contains('disabled')) {
+                        this.style.setProperty('background-color', '#2d3e52', 'important');
+                        this.style.setProperty('border-color', '#4a5f78', 'important');
+                        this.style.setProperty('color', '#ffffff', 'important');
+                        this.style.transform = 'translateY(-2px)';
+                        this.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)';
+                    }
+                });
+
+                link.addEventListener('mouseleave', function () {
+                    if (!this.parentElement.classList.contains('active')) {
+                        this.style.setProperty('background-color', '#243447', 'important');
+                        this.style.setProperty('border-color', '#3d4f63', 'important');
+                        this.style.setProperty('color', '#b8c5d6', 'important');
+                        this.style.transform = 'translateY(0)';
+                        this.style.boxShadow = 'none';
+                    }
+                });
+            });
+
+            // Add hover effect to active page button
+            document.querySelectorAll('.pagination .page-item.active .page-link').forEach(link => {
+                link.addEventListener('mouseenter', function () {
+                    this.style.opacity = '0.85';
+                    this.style.boxShadow = '0 4px 12px rgba(66, 133, 244, 0.5)';
+                });
+
+                link.addEventListener('mouseleave', function () {
+                    this.style.opacity = '1';
+                    this.style.boxShadow = 'none';
+                });
+            });
+
             // Previous button
             const prevBtn = document.querySelector('.pagination .page-item:first-child .page-link');
             if (prevBtn) {
@@ -1778,6 +1819,38 @@
                     showPage(pageNum);
                 });
             });
+
+            // Re-apply hover effects after pagination updates
+            function reapplyHoverEffects() {
+                document.querySelectorAll('.pagination .page-item:not(.disabled):not(.active) .page-link').forEach(link => {
+                    link.addEventListener('mouseenter', function() {
+                        if (!this.parentElement.classList.contains('active') && !this.parentElement.classList.contains('disabled')) {
+                            this.style.setProperty('background-color', '#2d3e52', 'important');
+                            this.style.setProperty('border-color', '#4a5f78', 'important');
+                            this.style.setProperty('color', '#ffffff', 'important');
+                            this.style.transform = 'translateY(-2px)';
+                            this.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)';
+                        }
+                    });
+                    
+                    link.addEventListener('mouseleave', function() {
+                        if (!this.parentElement.classList.contains('active')) {
+                            this.style.setProperty('background-color', '#243447', 'important');
+                            this.style.setProperty('border-color', '#3d4f63', 'important');
+                            this.style.setProperty('color', '#b8c5d6', 'important');
+                            this.style.transform = 'translateY(0)';
+                            this.style.boxShadow = 'none';
+                        }
+                    });
+                });
+            }
+
+            // Call reapplyHoverEffects after each page change
+            const originalShowPage = showPage;
+            showPage = function(page) {
+                originalShowPage(page);
+                setTimeout(reapplyHoverEffects, 100);
+            };
         });
 
         // View Graduate Modal
