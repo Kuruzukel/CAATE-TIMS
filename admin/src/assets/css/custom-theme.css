@@ -351,6 +351,9 @@
         0 0 0 1px rgba(54, 145, 191, 0.1) !important;
     box-sizing: border-box !important;
     width: auto !important;
+    max-width: none !important;
+    padding-left: 1.625rem !important;
+    padding-right: 1.625rem !important;
 }
 
 .bg-navbar-theme {
@@ -367,6 +370,38 @@
 .navbar .container-xxl,
 .navbar .container-fluid {
     background-color: transparent !important;
+}
+
+/* Override core.css navbar-nav-right flex-basis */
+.layout-navbar .navbar-nav-right {
+    flex-basis: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    gap: 1rem !important;
+    flex-wrap: nowrap !important;
+}
+
+/* Ensure navbar container doesn't overflow */
+.layout-navbar.navbar-detached {
+    overflow: visible !important;
+}
+
+.layout-navbar .navbar {
+    overflow: visible !important;
+}
+
+/* Fix navbar container max-width issue */
+.layout-navbar.navbar-detached.container-xxl {
+    max-width: 100% !important;
+}
+
+/* Ensure navbar has proper padding and doesn't constrain content */
+.layout-navbar .container-xxl {
+    max-width: 100% !important;
+    padding-left: 1.625rem !important;
+    padding-right: 1.625rem !important;
 }
 
 /* Layout Page Background */
@@ -764,23 +799,107 @@ a,
 }
 
 /* Search Bar with Icon Inside */
+.navbar .navbar-nav.align-items-center {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: 300px !important;
+    min-width: 0 !important;
+}
+
 .navbar .nav-item.position-relative {
-    width: 100%;
-    max-width: 300px;
+    width: 250px !important;
+    max-width: 250px !important;
 }
 
 .navbar .nav-item.position-relative .bx-search {
-    color: var(--text-light) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
     pointer-events: none;
 }
 
 .navbar .nav-item.position-relative .form-control {
     padding-left: 40px !important;
+    width: 250px !important;
+    max-width: 250px !important;
+    min-width: 150px !important;
 }
 
 .navbar .nav-item.position-relative .form-control:focus+.bx-search,
 .navbar .nav-item.position-relative:focus-within .bx-search {
     color: var(--primary-blue) !important;
+}
+
+/* Navbar Layout Fix */
+.navbar-nav-right {
+    width: 100% !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+}
+
+.navbar-nav-right > .navbar-nav {
+    flex-shrink: 0 !important;
+}
+
+.navbar-nav-right > ul.navbar-nav {
+    flex-shrink: 0 !important;
+    margin-left: auto !important;
+}
+
+/* User dropdown should not shrink */
+.navbar-nav-right .navbar-nav.ms-auto {
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+}
+
+/* Responsive navbar adjustments */
+@media (max-width: 1199px) {
+    .navbar .navbar-nav.align-items-center {
+        max-width: 200px !important;
+    }
+    
+    .navbar .nav-item.position-relative {
+        width: 180px !important;
+        max-width: 180px !important;
+    }
+    
+    .navbar .nav-item.position-relative .form-control {
+        width: 180px !important;
+        max-width: 180px !important;
+        min-width: 120px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar .navbar-nav.align-items-center {
+        max-width: 180px !important;
+    }
+    
+    .navbar .nav-item.position-relative {
+        width: 150px !important;
+        max-width: 150px !important;
+    }
+    
+    .navbar .nav-item.position-relative .form-control {
+        width: 150px !important;
+        max-width: 150px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar .navbar-nav.align-items-center {
+        max-width: 150px !important;
+    }
+    
+    .navbar .nav-item.position-relative {
+        width: 120px !important;
+        max-width: 120px !important;
+    }
+    
+    .navbar .nav-item.position-relative .form-control {
+        width: 120px !important;
+        max-width: 120px !important;
+        min-width: 100px !important;
+        font-size: 0.875rem !important;
+    }
 }
 
 /* Remove Avatar Online Status Indicator */
@@ -796,6 +915,14 @@ a,
 
 .container-xxl.flex-grow-1.container-p-y {
     background-color: #c5e3f5 !important;
+    max-width: none !important;
+    width: 100% !important;
+}
+
+/* Ensure all container-xxl elements use full width */
+.layout-page .container-xxl {
+    max-width: none !important;
+    width: 100% !important;
 }
 
 /* Footer Background */
@@ -929,6 +1056,19 @@ footer span,
     .layout-menu-fixed-offcanvas:not(.layout-menu-collapsed) .layout-page {
         padding-top: 0.7rem !important;
     }
+}
+
+/* Fix navbar overlap with content */
+.layout-navbar-fixed .layout-page {
+    padding-top: 100px !important;
+}
+
+.layout-page .content-wrapper {
+    padding-top: 0 !important;
+}
+
+.container-xxl.flex-grow-1.container-p-y {
+    padding-top: 1.5rem !important;
 }
 
 /* Submenu Active State Styling */
@@ -1382,6 +1522,9 @@ body:has(.layout-menu.menu-hidden) .layout-container {
 .container-xxl.flex-grow-1.container-p-y {
     min-height: 85vh;
     padding-top: 1.5rem;
+    max-width: none !important;
+    width: 100% !important;
+}
     padding-bottom: 1.5rem;
 }
 
@@ -2088,3 +2231,75 @@ body:has(.layout-menu.menu-hidden) .layout-container {
     border: 1px solid rgba(220, 53, 69, 0.3);
     color: #ffffff;
 }
+
+
+/* ========================================
+   NAVBAR FIX - Override all container constraints
+   ======================================== */
+
+/* Remove max-width constraint from navbar container */
+nav.layout-navbar.container-xxl,
+nav.layout-navbar.navbar-detached.container-xxl,
+.layout-navbar.container-xxl {
+    max-width: none !important;
+    width: auto !important;
+}
+
+/* Ensure navbar content area uses full available width */
+#layout-navbar,
+#layout-navbar.container-xxl {
+    max-width: none !important;
+}
+
+/* Fix navbar at all breakpoints */
+@media (min-width: 1200px) {
+    .layout-navbar.navbar-detached.container-xxl {
+        max-width: none !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .layout-navbar.navbar-detached.container-xxl {
+        max-width: none !important;
+    }
+}
+
+/* Ensure navbar-nav-right doesn't overflow */
+.layout-navbar .navbar-nav-right,
+#navbar-collapse {
+    max-width: 100% !important;
+    overflow: visible !important;
+}
+
+/* ========================================
+   CONTENT WRAPPER FIX - Override all container constraints
+   ======================================== */
+
+/* Remove max-width from all container-xxl in content area */
+.content-wrapper .container-xxl,
+.layout-page .content-wrapper .container-xxl {
+    max-width: none !important;
+    width: 100% !important;
+}
+
+/* Override Bootstrap container-xxl max-width at all breakpoints */
+@media (min-width: 1400px) {
+    .container-xxl {
+        max-width: none !important;
+    }
+    
+    .layout-page .container-xxl {
+        max-width: none !important;
+    }
+}
+
+/* Ensure content uses full width */
+.layout-page {
+    width: 100% !important;
+}
+
+.content-wrapper {
+    width: 100% !important;
+    max-width: none !important;
+}
+
