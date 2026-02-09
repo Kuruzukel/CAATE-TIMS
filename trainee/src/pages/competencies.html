@@ -710,19 +710,6 @@
                     }
                 });
             }
-
-            // Prevent menu from closing when clicking on menu items
-            const menuLinks = document.querySelectorAll('.menu-link');
-            menuLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    // Allow default behavior for links that navigate
-                    if (this.href && this.href !== 'javascript:void(0);') {
-                        return;
-                    }
-                    // For toggle links, prevent closing the menu
-                    e.stopPropagation();
-                });
-            });
         });
     </script>
 </body>
