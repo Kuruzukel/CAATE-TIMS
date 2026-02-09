@@ -6,13 +6,13 @@ Centralized repository for images, logos, and visual assets used across all ESCA
 
 ```
 img/
-├── CAATE FB COURSES/                    # Course promotional images
+├── 📂 CAATE FB COURSES/                 # Course promotional images (5 files)
 │   ├── ADVANCEDSKINCARE.png
 │   ├── AESTHETICSERVICES.png
 │   ├── BEAUTYCARE(NAILCARE).png
 │   ├── BEAUTYCARE(SKINCARE).png
 │   └── PERMANENTMAKEUPTATTOO.png
-├── GRADUATES/                           # Graduate photos
+├── 📂 GRADUATES/                        # Graduate photos (21 files)
 │   ├── 1.png
 │   ├── AIRAH.png
 │   ├── ANDREA.png
@@ -34,31 +34,34 @@ img/
 │   ├── RENZ.png
 │   ├── SAIRA.png
 │   └── SHAINNA.png
-├── CAATE Logos/                         # CAATE branding
+├── 📄 CAATE Logos & Branding (8 files)
 │   ├── CAATELOGOGRADIENT.png            # Gradient version
 │   ├── CAATELOGOROUNDED.png             # Rounded version
 │   ├── CAATELOGOREMOVEBG-removebg-preview.png  # Transparent background
 │   ├── ROUNDCAATELOGO.png               # Round format
 │   ├── ADMINCAATELOGO.png               # Admin-specific logo
-│   └── CAATE_META_LOGO.png              # Meta/social media logo
-├── TESDA Logos/                         # TESDA branding
+│   ├── ADMINLOGONOBG.png                # Admin logo no background
+│   ├── CAATE_META_LOGO.png              # Meta/social media logo
+│   └── color.jpg                        # Color palette reference
+├── 📄 TESDA Logos & Branding (7 files)
 │   ├── TESDALOGOGRADIENT.png            # Gradient version
 │   ├── TESDANOTEXTLOGO.png              # Logo without text
 │   ├── TESDA-LOGO-TEXT.png              # Logo with text
 │   ├── TESDALOGONOBG.png                # No background version
 │   ├── TESDALOGOWHITEBG.png             # White background version
-│   └── tesda-logo.webp                  # WebP format
-├── Background Images/                   # Background assets
+│   ├── tesda-logo.webp                  # WebP format
+│   └── TESDALOGOGRADIENT.png            # Gradient version
+├── 📄 Background Images (5 files)
 │   ├── CAATEBG.png
 │   ├── CAATEBGEDITED.png
 │   ├── CAATEBGFINAL.png
 │   ├── CAATEBGX.png
 │   └── color.jpg
-├── Other Assets/                        # Miscellaneous assets
+├── 📄 Other Assets (3 files)
 │   ├── 11.png
 │   ├── AVATARNIKEL.jpg                  # Avatar/profile image
 │   └── ADMINLOGONOBG.png                # Admin logo no background
-└── README.md                            # This file
+└── 📄 README.md                         # This file
 ```
 
 ## Asset Categories

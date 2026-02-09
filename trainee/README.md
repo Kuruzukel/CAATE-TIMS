@@ -6,39 +6,61 @@ Student/trainee dashboard and management interface for ESCAATE (Enterprise Skill
 
 ```
 trainee/
-├── src/
-│   ├── pages/                                  # Trainee pages
-│   │   ├── dashboard.html                     # Main trainee dashboard
-│   │   ├── admission-slip.html                # Admission slip/certificate
-│   │   ├── application-form.html              # Application form
-│   │   ├── courses-programs.html              # Courses and programs
-│   │   ├── manage-profile.html                # Profile management
-│   │   └── change-password.html               # Password management
-│   ├── assets/
-│   │   ├── css/                               # Stylesheets
-│   │   │   ├── style.css                      # Main styles
-│   │   │   ├── custom-theme.css               # Custom theme
-│   │   │   ├── demo.css                       # Demo styles
-│   │   │   ├── admission-slip.css             # Admission slip styles
-│   │   │   └── application-form.css           # Application form styles
-│   │   ├── js/                                # JavaScript files
-│   │   │   ├── main.js                        # Main application logic
-│   │   │   ├── config.js                      # Configuration
-│   │   │   ├── admission-slip.js              # Admission slip functionality
-│   │   │   ├── application-form.js            # Application form handling
-│   │   │   ├── change-password.js             # Password change functionality
-│   │   │   └── student-id.js                  # Student ID functionality
-│   │   ├── images/                            # Application-specific images
-│   │   ├── img/
-│   │   │   └── illustrations/                 # Illustration assets
+├── 📂 public/                          # Static files
+├── 📂 src/
+│   ├── 📂 assets/
+│   │   ├── 📂 css/                     # Stylesheets (12 files)
+│   │   │   ├── admission-slip.css      # Admission slip styles
+│   │   │   ├── application-form.css    # Application form styles
+│   │   │   ├── attendance.css          # Attendance styles
+│   │   │   ├── change-password.css     # Password change styles
+│   │   │   ├── class-roster.css        # Class roster styles
+│   │   │   ├── courses.css             # Courses styles
+│   │   │   ├── custom-theme.css        # Custom theme
+│   │   │   ├── dashboard.css           # Dashboard styles
+│   │   │   ├── demo.css                # Demo styles
+│   │   │   ├── enrollment.css          # Enrollment styles
+│   │   │   ├── manage-profile.css      # Profile management styles
+│   │   │   └── style.css               # Main styles
+│   │   ├── 📂 images/                  # Application images (17 files)
+│   │   │   ├── 📂 CAATE FB COURSES/    # Course promotional images (5)
+│   │   │   ├── CAATE logos/            # CAATE branding (8)
+│   │   │   ├── TESDA logos/            # TESDA branding (4)
+│   │   │   └── Other assets/           # Miscellaneous
+│   │   ├── 📂 img/
+│   │   │   └── 📂 illustrations/       # Illustration assets (3)
 │   │   │       ├── girl-doing-yoga-light.png
 │   │   │       ├── man-with-laptop-light.png
 │   │   │       └── page-misc-error-light.png
-│   │   └── vendor/                            # Third-party libraries
-├── public/                                    # Static files
-├── package.json                               # Dependencies and scripts
-├── .gitignore                                 # Git ignore rules
-└── README.md                                  # This file
+│   │   ├── 📂 js/                      # JavaScript files (13 files)
+│   │   │   ├── admission-slip.js       # Admission slip functionality
+│   │   │   ├── application-form.js     # Application form handling
+│   │   │   ├── attendance.js           # Attendance functionality
+│   │   │   ├── change-password.js      # Password change functionality
+│   │   │   ├── class-roster.js         # Class roster functionality
+│   │   │   ├── competencies.js         # Competencies functionality
+│   │   │   ├── config.js               # Configuration
+│   │   │   ├── courses.js              # Courses functionality
+│   │   │   ├── dashboard.js            # Dashboard functionality
+│   │   │   ├── enrollment.js           # Enrollment functionality
+│   │   │   ├── main.js                 # Main application logic
+│   │   │   ├── manage-profile.js       # Profile management
+│   │   │   ├── menu-toggle.js          # Menu toggle functionality
+│   │   │   └── student-id.js           # Student ID functionality
+│   │   └── 📂 vendor/                  # Third-party libraries
+│   └── 📂 pages/                       # Trainee pages (10 files)
+│       ├── admission-slip.html         # Admission slip/certificate
+│       ├── application-form.html       # Application form
+│       ├── attendance.html             # Attendance tracking
+│       ├── change-password.html        # Password management
+│       ├── class-roster.html           # Class roster
+│       ├── competencies.html           # Competencies tracking
+│       ├── courses.html                # Courses and programs
+│       ├── dashboard.html              # Main trainee dashboard
+│       ├── enrollment.html             # Enrollment management
+│       └── manage-profile.html         # Profile management
+├── package.json                        # Dependencies and scripts
+└── README.md                           # This file
 ```
 
 ## Features
@@ -68,6 +90,37 @@ trainee/
 - Document uploads
 - Application history
 
+### Attendance
+
+- View attendance records
+- Track attendance percentage
+- View attendance history
+- Mark attendance (if applicable)
+- Attendance reports
+
+### Change Password
+
+- Secure password change
+- Password strength validation
+- Current password verification
+- Change history tracking
+
+### Class Roster
+
+- View classmates and instructors
+- Contact information
+- Class schedules
+- Group assignments
+- Communication tools
+
+### Competencies
+
+- Track competency progress
+- View competency requirements
+- Assessment results
+- Skill development tracking
+- Certification progress
+
 ### Courses & Programs
 
 - View enrolled courses
@@ -77,6 +130,14 @@ trainee/
 - Instructor contact information
 - Course completion status
 
+### Enrollment
+
+- Enrollment status tracking
+- Course registration
+- Enrollment history
+- Payment status
+- Enrollment documents
+
 ### Profile Management
 
 - Update personal information
@@ -84,13 +145,6 @@ trainee/
 - Update emergency contacts
 - Manage profile picture
 - View profile history
-
-### Change Password
-
-- Secure password change
-- Password strength validation
-- Current password verification
-- Change history tracking
 
 ## Getting Started
 
@@ -171,7 +225,43 @@ Application-specific illustrations are in `src/assets/img/illustrations/`:
 - Submission history
 - Resubmission options
 
-### Courses & Programs (`courses-programs.html`)
+### Attendance (`attendance.html`)
+
+- Attendance record display
+- Attendance percentage tracking
+- Calendar view of attendance
+- Attendance history
+- Absence notifications
+- Attendance reports
+
+### Change Password (`change-password.html`)
+
+- Current password verification
+- New password entry
+- Password confirmation
+- Password strength indicator
+- Security tips
+- Change history
+
+### Class Roster (`class-roster.html`)
+
+- Classmate directory
+- Instructor information
+- Contact details
+- Class schedules
+- Group assignments
+- Communication features
+
+### Competencies (`competencies.html`)
+
+- Competency framework display
+- Progress tracking
+- Assessment results
+- Skill development metrics
+- Certification tracking
+- Achievement badges
+
+### Courses & Programs (`courses.html`)
 
 - List of enrolled courses
 - Course progress bars
@@ -180,6 +270,15 @@ Application-specific illustrations are in `src/assets/img/illustrations/`:
 - Instructor details
 - Course materials links
 - Completion certificates
+
+### Enrollment (`enrollment.html`)
+
+- Enrollment status overview
+- Course registration interface
+- Payment tracking
+- Enrollment documents
+- Registration history
+- Course availability
 
 ### Manage Profile (`manage-profile.html`)
 
@@ -190,15 +289,6 @@ Application-specific illustrations are in `src/assets/img/illustrations/`:
 - Address information
 - Educational background
 - Save and update functionality
-
-### Change Password (`change-password.html`)
-
-- Current password verification
-- New password entry
-- Password confirmation
-- Password strength indicator
-- Security tips
-- Change history
 
 ## Development Guidelines
 

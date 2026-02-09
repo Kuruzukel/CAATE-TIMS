@@ -6,56 +6,63 @@ Unified authentication and admission management system for ESCAATE (Enterprise S
 
 ```
 auth/
-├── src/
-│   ├── pages/                                  # Authentication pages
-│   │   ├── login.html                         # User login page
-│   │   ├── register.html                      # User registration page
-│   │   ├── forgot-password.html               # Password recovery page
-│   │   ├── account/
-│   │   │   └── change-password.html           # Change password page
-│   │   └── admission/                         # Admission workflow pages
-│   │       ├── admission.html                 # Admission overview
-│   │       ├── application-form.html          # Application form
-│   │       ├── appointment-form.html          # Appointment scheduling
-│   │       └── consent-form.html              # Consent form
-│   ├── assets/
-│   │   ├── css/                               # Stylesheets
-│   │   │   ├── page-auth.css                  # Authentication page styles
-│   │   │   ├── auth-custom.css                # Custom auth styles
-│   │   │   ├── core.css                       # Core styles
-│   │   │   ├── theme-default.css              # Default theme
-│   │   │   ├── demo.css                       # Demo styles
-│   │   │   ├── admission.css                  # Admission page styles
-│   │   │   ├── application-form.css           # Application form styles
-│   │   │   ├── appointment-form.css           # Appointment form styles
-│   │   │   ├── consent-form.css               # Consent form styles
-│   │   │   ├── boxicons.css                   # Icon styles
-│   │   │   └── perfect-scrollbar.css          # Scrollbar styles
-│   │   ├── js/                                # JavaScript files
-│   │   │   ├── main.js                        # Main application logic
-│   │   │   ├── config.js                      # Configuration
-│   │   │   ├── helpers.js                     # Helper functions
-│   │   │   ├── menu.js                        # Menu functionality
-│   │   │   ├── admission.js                   # Admission logic
-│   │   │   ├── application-form.js            # Application form handling
-│   │   │   ├── apppoinrment-form.js           # Appointment form handling
-│   │   │   ├── consent-form.js                # Consent form handling
-│   │   │   ├── bootstrap.js                   # Bootstrap initialization
-│   │   │   ├── jquery.js                      # jQuery
-│   │   │   ├── popper.js                      # Popper.js
-│   │   │   └── perfect-scrollbar.js           # Perfect scrollbar
-│   │   ├── images/                            # Application-specific images
-│   │   ├── fonts/
-│   │   │   ├── boxicons/                      # Boxicons font files
-│   │   │   └── boxicons.css                   # Boxicons stylesheet
-│   │   └── vendor/                            # Third-party libraries
-│   └── layouts/                               # Layout templates (if applicable)
-├── public/                                    # Static files
-├── docs/
-│   └── STRUCTURE.md                           # Structure documentation
-├── package.json                               # Dependencies and scripts
-├── .gitignore                                 # Git ignore rules
-└── README.md                                  # This file
+├── 📂 docs/
+│   └── STRUCTURE.md                    # Structure documentation
+├── 📂 public/                          # Static files
+├── 📂 src/
+│   ├── 📂 assets/
+│   │   ├── 📂 css/                     # Stylesheets (10 files)
+│   │   │   ├── admission.css           # Admission page styles
+│   │   │   ├── application-form.css    # Application form styles
+│   │   │   ├── appointment-form.css    # Appointment form styles
+│   │   │   ├── auth-custom.css         # Custom auth styles
+│   │   │   ├── boxicons.css            # Icon styles
+│   │   │   ├── consent-form.css        # Consent form styles
+│   │   │   ├── core.css                # Core styles
+│   │   │   ├── demo.css                # Demo styles
+│   │   │   ├── page-auth.css           # Authentication page styles
+│   │   │   ├── perfect-scrollbar.css   # Scrollbar styles
+│   │   │   └── theme-default.css       # Default theme
+│   │   ├── 📂 fonts/
+│   │   │   ├── 📂 boxicons/            # Boxicons font files (5)
+│   │   │   │   ├── boxicons.eot
+│   │   │   │   ├── boxicons.svg
+│   │   │   │   ├── boxicons.ttf
+│   │   │   │   ├── boxicons.woff
+│   │   │   │   └── boxicons.woff2
+│   │   │   └── boxicons.css            # Boxicons stylesheet
+│   │   ├── 📂 images/                  # Application images (17 files)
+│   │   │   ├── CAATE logos/            # CAATE branding (8)
+│   │   │   ├── TESDA logos/            # TESDA branding (4)
+│   │   │   ├── Course images/          # Course promotional (5)
+│   │   │   └── Other assets/           # Miscellaneous
+│   │   └── 📂 js/                      # JavaScript files (11 files)
+│   │       ├── admission.js            # Admission logic
+│   │       ├── application-form.js     # Application form handling
+│   │       ├── apppoinrment-form.js    # Appointment form handling
+│   │       ├── bootstrap.js            # Bootstrap initialization
+│   │       ├── config.js               # Configuration
+│   │       ├── consent-form.js         # Consent form handling
+│   │       ├── helpers.js              # Helper functions
+│   │       ├── jquery.js               # jQuery library
+│   │       ├── main.js                 # Main application logic
+│   │       ├── menu.js                 # Menu functionality
+│   │       ├── perfect-scrollbar.js    # Perfect scrollbar
+│   │       └── popper.js               # Popper.js library
+│   └── 📂 pages/                       # Authentication pages (7 files)
+│       ├── 📂 account/
+│       │   └── change-password.html    # Change password page
+│       ├── 📂 admission/               # Admission workflow pages (4)
+│       │   ├── admission.html          # Admission overview
+│       │   ├── application-form.html   # Application form
+│       │   ├── appointment-form.html   # Appointment scheduling
+│       │   └── consent-form.html       # Consent form
+│       ├── forgot-password.html        # Password recovery page
+│       ├── login.html                  # User login page
+│       └── register.html               # User registration page
+├── .gitignore                          # Git ignore rules
+├── package.json                        # Dependencies and scripts
+└── README.md                           # This file
 ```
 
 ## Features

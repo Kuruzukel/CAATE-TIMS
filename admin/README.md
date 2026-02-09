@@ -6,65 +6,99 @@ Professional administration dashboard for ESCAATE (Enterprise Skills & Competenc
 
 ```
 admin/
-├── src/
-│   ├── pages/                          # Admin pages
-│   │   ├── dashboard.html              # Main dashboard
-│   │   ├── competencies.html           # Competencies management
-│   │   ├── courses.html                # Courses management
-│   │   ├── schedule.html               # Schedule management
-│   │   ├── graduates.html              # Graduates tracking
-│   │   ├── accounts.html               # User accounts
-│   │   ├── attendance.html             # Attendance records
-│   │   ├── enrollment.html             # Enrollment management
-│   │   ├── application.html            # Application processing
-│   │   ├── audit-inventory.html        # Audit inventory
-│   │   ├── caate-inventory.html        # CAATE inventory
-│   │   ├── manage-profile.html         # Profile management
-│   │   ├── change-password.html        # Password management
-│   │   └── requests.html               # Request management
-│   ├── assets/
-│   │   ├── css/                        # Stylesheets
-│   │   │   ├── style.css               # Main styles
+├── 📂 config/
+│   └── gulpfile.js                     # Gulp build configuration
+├── 📂 docs/
+│   ├── MIGRATION_GUIDE.md              # Migration documentation
+│   ├── QUICK_START.md                  # Quick start guide
+│   └── STRUCTURE.md                    # Detailed structure docs
+├── 📂 public/                          # Static files
+├── 📂 src/
+│   ├── 📂 assets/
+│   │   ├── 📂 css/                     # Stylesheets (12 files)
+│   │   │   ├── admin-dashboard.css     # Dashboard styles
+│   │   │   ├── admission.css           # Admission page styles
+│   │   │   ├── application.css         # Application page styles
+│   │   │   ├── attendance.css          # Attendance page styles
+│   │   │   ├── audit-inventory.css     # Audit inventory styles
+│   │   │   ├── caate-inventory.css     # CAATE inventory styles
+│   │   │   ├── change-password.css     # Password change styles
 │   │   │   ├── custom-theme.css        # Custom theme
 │   │   │   ├── demo.css                # Demo styles
-│   │   │   ├── table-scrollbar.css     # Table scrollbar styling
 │   │   │   ├── graduates.css           # Graduates page styles
 │   │   │   ├── schedule.css            # Schedule page styles
-│   │   │   ├── audit-inventory.css     # Audit inventory styles
-│   │   │   └── caate-inventory.css     # CAATE inventory styles
-│   │   ├── js/                         # JavaScript files
-│   │   │   ├── main.js                 # Main application logic
-│   │   │   ├── config.js               # Configuration
-│   │   │   ├── menu-toggle.js          # Menu toggle functionality
-│   │   │   ├── dashboards-analytics.js # Dashboard analytics
-│   │   │   ├── competencies.js         # Competencies management
-│   │   │   ├── graduates.js            # Graduates management
-│   │   │   ├── schedule.js             # Schedule management
+│   │   │   ├── style.css               # Main styles
+│   │   │   └── table-scrollbar.css     # Table scrollbar styling
+│   │   ├── 📂 fonts/
+│   │   │   └── 📂 fonts/
+│   │   │       └── boxicons.scss       # Boxicons SCSS
+│   │   ├── 📂 images/                  # Application images (25 files)
+│   │   │   ├── 📂 CAATE FB COURSES/    # Course promotional images (5)
+│   │   │   ├── CAATE logos/            # CAATE branding (8)
+│   │   │   ├── TESDA logos/            # TESDA branding (4)
+│   │   │   └── Other assets/           # Miscellaneous (8)
+│   │   ├── 📂 img/                     # Additional images
+│   │   │   ├── 📂 avatars/             # Avatar images (4)
+│   │   │   ├── 📂 backgrounds/         # Background images (1)
+│   │   │   ├── 📂 elements/            # UI elements (13)
+│   │   │   ├── 📂 favicon/             # Favicon (1)
+│   │   │   ├── 📂 icons/               # Icon sets
+│   │   │   │   ├── 📂 brands/          # Brand icons (10)
+│   │   │   │   └── 📂 unicons/         # Unicons (8)
+│   │   │   ├── 📂 illustrations/       # Illustrations (3)
+│   │   │   └── 📂 layouts/             # Layout images
+│   │   ├── 📂 js/                      # JavaScript files (21 files)
+│   │   │   ├── accounts.js             # Account management
+│   │   │   ├── admin-dashboard.js      # Dashboard functionality
+│   │   │   ├── admission.js            # Admission logic
+│   │   │   ├── application.js          # Application handling
+│   │   │   ├── attendance.js           # Attendance management
 │   │   │   ├── audit-inventory.js      # Audit inventory logic
 │   │   │   ├── caate-inventory.js      # CAATE inventory logic
+│   │   │   ├── change-password.js      # Password change
+│   │   │   ├── competencies.js         # Competencies management
+│   │   │   ├── config.js               # Configuration
+│   │   │   ├── courses.js              # Course management
+│   │   │   ├── dashboards-analytics.js # Analytics
+│   │   │   ├── enrollment.js           # Enrollment processing
+│   │   │   ├── extended-ui-perfect-scrollbar.js # Scrollbar
 │   │   │   ├── form-basic-inputs.js    # Form handling
+│   │   │   ├── graduates.js            # Graduate management
+│   │   │   ├── main.js                 # Main application logic
+│   │   │   ├── manage-profile.js       # Profile management
+│   │   │   ├── menu-toggle.js          # Menu functionality
 │   │   │   ├── pages-account-settings-account.js # Account settings
+│   │   │   ├── requests.js             # Request management
+│   │   │   ├── schedule.js             # Schedule management
 │   │   │   ├── ui-modals.js            # Modal functionality
 │   │   │   ├── ui-popover.js           # Popover functionality
-│   │   │   ├── ui-toasts.js            # Toast notifications
-│   │   │   └── extended-ui-perfect-scrollbar.js # Scrollbar
-│   │   ├── images/                     # Application-specific images
-│   │   ├── fonts/                      # Font files
-│   │   └── vendor/                     # Third-party libraries
-│   └── layouts/                        # Layout templates (if applicable)
-├── public/                             # Static files
-├── config/
-│   └── gulpfile.js                     # Gulp build configuration
-├── docs/
-│   ├── STRUCTURE.md                    # Detailed structure documentation
-│   ├── MIGRATION_GUIDE.md              # Migration guide
-│   └── QUICK_START.md                  # Quick start guide
-├── package.json                        # Dependencies and scripts
-├── gulpfile.js                         # Gulp configuration
-├── webpack.config.js                   # Webpack configuration
-├── build-config.js                     # Build configuration
+│   │   │   └── ui-toasts.js            # Toast notifications
+│   │   └── 📂 vendor/                  # Third-party libraries
+│   ├── 📂 layouts/                     # Layout templates
+│   └── 📂 pages/                       # HTML pages (15 files)
+│       ├── accounts.html               # User accounts management
+│       ├── admission.html              # Admission processing
+│       ├── application.html            # Application management
+│       ├── attendance.html             # Attendance records
+│       ├── audit-inventory.html        # Audit inventory
+│       ├── caate-inventory.html        # CAATE inventory
+│       ├── change-password.html        # Password management
+│       ├── competencies.html           # Competencies management
+│       ├── courses.html                # Course management
+│       ├── dashboard.html              # Main dashboard
+│       ├── enrollment.html             # Enrollment management
+│       ├── graduates.html              # Graduate tracking
+│       ├── manage-profile.html         # Profile management
+│       ├── requests.html               # Request management
+│       └── schedule.html               # Schedule management
 ├── .gitignore                          # Git ignore rules
-└── README.md                           # This file
+├── build-config.js                     # Build configuration
+├── gulpfile.js                         # Main Gulp configuration
+├── INDEX.md                            # Index documentation
+├── MIGRATION_SUMMARY.md                # Migration summary
+├── package.json                        # Dependencies and scripts
+├── README.md                           # This file
+└── webpack.config.js                   # Webpack configuration
 ```
 
 ## Features

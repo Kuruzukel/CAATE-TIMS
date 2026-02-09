@@ -140,43 +140,98 @@ Student dashboard for course management and profile administration.
 ```
 CAATE-ITRMS/
 │
-├── 📂 admin/
-│   ├── src/
-│   │   ├── pages/                    # 15 admin pages
-│   │   └── assets/                   # CSS, JS, images
-│   ├── package.json
-│   └── README.md
+├── 📂 .git/                           # Git repository
+├── 📂 .qoder/                         # Qoder configuration
+│   └── skills/                        # Skills directory
+├── 📂 .vscode/                        # VS Code settings
 │
-├── 📂 auth/
-│   ├── src/
-│   │   ├── pages/                    # 7 auth pages
-│   │   └── assets/                   # CSS, JS, fonts
-│   ├── package.json
-│   └── README.md
+├── 📂 admin/                          # Admin Dashboard Application
+│   ├── 📂 config/
+│   │   └── gulpfile.js                # Gulp build configuration
+│   ├── 📂 docs/
+│   │   ├── MIGRATION_GUIDE.md         # Migration documentation
+│   │   ├── QUICK_START.md             # Quick start guide
+│   │   └── STRUCTURE.md               # Detailed structure docs
+│   ├── 📂 public/                     # Static files
+│   ├── 📂 src/
+│   │   ├── 📂 assets/
+│   │   │   ├── 📂 css/                # 12 CSS files
+│   │   │   ├── 📂 fonts/              # Font assets
+│   │   │   ├── 📂 images/             # Local images
+│   │   │   ├── 📂 img/                # Additional images
+│   │   │   ├── 📂 js/                 # 21 JavaScript files
+│   │   │   └── 📂 vendor/             # Third-party libraries
+│   │   ├── 📂 layouts/                # Layout templates
+│   │   └── 📂 pages/                  # 15 HTML pages
+│   ├── .gitignore
+│   ├── build-config.js                # Build configuration
+│   ├── gulpfile.js                    # Main Gulp file
+│   ├── INDEX.md                       # Index documentation
+│   ├── MIGRATION_SUMMARY.md           # Migration summary
+│   ├── package.json                   # Dependencies & scripts
+│   ├── README.md                      # Admin documentation
+│   └── webpack.config.js              # Webpack configuration
 │
-├── 📂 public/
-│   ├── src/
-│   │   ├── pages/                    # 11 public pages
-│   │   └── assets/                   # CSS, JS, images
-│   ├── package.json
-│   └── README.md
+├── 📂 auth/                           # Authentication System
+│   ├── 📂 docs/
+│   │   └── STRUCTURE.md               # Structure documentation
+│   ├── 📂 public/                     # Static files
+│   ├── 📂 src/
+│   │   ├── 📂 assets/
+│   │   │   ├── 📂 css/                # 10 CSS files
+│   │   │   ├── 📂 fonts/              # Boxicons fonts
+│   │   │   ├── 📂 images/             # Local images
+│   │   │   └── 📂 js/                 # 11 JavaScript files
+│   │   └── 📂 pages/
+│   │       ├── 📂 account/            # Account management
+│   │       ├── 📂 admission/          # Admission workflow
+│   │       ├── forgot-password.html   # Password recovery
+│   │       ├── login.html             # User login
+│   │       └── register.html          # User registration
+│   ├── .gitignore
+│   ├── package.json                   # Dependencies & scripts
+│   └── README.md                      # Auth documentation
 │
-├── 📂 trainee/
-│   ├── src/
-│   │   ├── pages/                    # 6 trainee pages
-│   │   └── assets/                   # CSS, JS, images
-│   ├── package.json
-│   └── README.md
+├── 📂 public/                         # Public Website
+│   ├── 📂 dist/                       # Built files
+│   ├── 📂 docs/
+│   │   └── STRUCTURE.md               # Structure documentation
+│   ├── 📂 src/
+│   │   ├── 📂 assets/
+│   │   │   ├── 📂 css/                # 11 CSS files
+│   │   │   ├── 📂 fonts/              # Font assets
+│   │   │   ├── 📂 images/             # Local images
+│   │   │   └── 📂 js/                 # 12 JavaScript files
+│   │   └── 📂 pages/
+│   │       ├── 📂 courses/            # 10 course pages
+│   │       └── index.html             # Landing page
+│   ├── .gitignore
+│   ├── package.json                   # Dependencies & scripts
+│   └── README.md                      # Public documentation
 │
-├── 📂 img/
-│   ├── CAATE FB COURSES/              # Course promotional images
-│   ├── GRADUATES/                     # Graduate photos
-│   ├── CAATE Logos/                   # CAATE branding
-│   ├── TESDA Logos/                   # TESDA branding
-│   └── README.md
+├── 📂 trainee/                        # Trainee Portal
+│   ├── 📂 public/                     # Static files
+│   ├── 📂 src/
+│   │   ├── 📂 assets/
+│   │   │   ├── 📂 css/                # 12 CSS files
+│   │   │   ├── 📂 images/             # Local images
+│   │   │   ├── 📂 img/                # Illustrations
+│   │   │   ├── 📂 js/                 # 13 JavaScript files
+│   │   │   └── 📂 vendor/             # Third-party libraries
+│   │   └── 📂 pages/                  # 10 HTML pages
+│   ├── package.json                   # Dependencies & scripts
+│   └── README.md                      # Trainee documentation
 │
-├── 📄 README.md                       # Main documentation
-└── 📄 package.json                    # Root dependencies
+├── 📂 img/                            # Shared Assets Directory
+│   ├── 📂 CAATE FB COURSES/           # 5 course promotional images
+│   ├── 📂 GRADUATES/                  # 21 graduate photos
+│   ├── CAATE Logos/                   # 6 CAATE branding assets
+│   ├── TESDA Logos/                   # 6 TESDA branding assets
+│   ├── Background Images/             # 5 background assets
+│   ├── Other Assets/                  # 3 miscellaneous files
+│   └── README.md                      # Asset documentation
+│
+└── 📄 README.md                       # Main project documentation
 ```
 
 ---
@@ -187,7 +242,7 @@ CAATE-ITRMS/
 
 Professional administration interface for managing all aspects of the training center.
 
-**Pages:** 15 | **Features:** Dashboard, Competencies, Courses, Schedule, Graduates, Accounts, Attendance, Enrollment, Applications, Inventory (Audit & CAATE), Profile, Change Password
+**Pages:** 15 | **CSS Files:** 12 | **JS Files:** 21 | **Features:** Dashboard, Competencies, Courses, Schedule, Graduates, Accounts, Attendance, Enrollment, Applications, Inventory (Audit & CAATE), Profile, Change Password
 
 [📖 Full Documentation](admin/README.md)
 
@@ -195,7 +250,7 @@ Professional administration interface for managing all aspects of the training c
 
 Secure authentication and comprehensive admission workflow.
 
-**Pages:** 7 | **Features:** Login, Register, Password Recovery, Admission, Application Form, Appointment, Consent, Account Management
+**Pages:** 7 | **CSS Files:** 10 | **JS Files:** 11 | **Features:** Login, Register, Password Recovery, Admission, Application Form, Appointment, Consent, Account Management
 
 [📖 Full Documentation](auth/README.md)
 
@@ -203,7 +258,7 @@ Secure authentication and comprehensive admission workflow.
 
 Public-facing website showcasing courses and training programs.
 
-**Pages:** 11 | **Courses:** 10 professional courses + Trainer Directory
+**Pages:** 11 | **CSS Files:** 11 | **JS Files:** 12 | **Courses:** 10 professional courses + Trainer Directory
 
 [📖 Full Documentation](public/README.md)
 
@@ -211,7 +266,7 @@ Public-facing website showcasing courses and training programs.
 
 Student dashboard for course management and profile administration.
 
-**Pages:** 6 | **Features:** Dashboard, Admission Slip, Application, Courses, Profile, Password Management
+**Pages:** 10 | **CSS Files:** 12 | **JS Files:** 13 | **Features:** Dashboard, Admission Slip, Application, Courses, Profile, Password Management
 
 [📖 Full Documentation](trainee/README.md)
 
@@ -352,12 +407,12 @@ npm run watch
 
 | Metric                  | Count              |
 | ----------------------- | ------------------ |
-| **Total Pages**         | 39 HTML pages      |
+| **Total Pages**         | 46 HTML pages      |
 | **Applications**        | 4 independent apps |
-| **CSS Files**           | 25+ stylesheets    |
-| **JavaScript Files**    | 30+ scripts        |
+| **CSS Files**           | 45+ stylesheets    |
+| **JavaScript Files**    | 57+ scripts        |
 | **Shared Assets**       | 46 files           |
-| **Documentation Files** | 5 README files     |
+| **Documentation Files** | 10 README/MD files |
 
 ---
 
