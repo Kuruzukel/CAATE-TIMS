@@ -381,7 +381,7 @@
 
                                         <!-- Buttons -->
                                         <div class="d-flex gap-2">
-                                            <button type="submit" class="btn btn-primary">
+                                            <button type="submit" class="btn btn-outline-secondary">
                                                 <i class="bx bx-check me-2"></i>Submit Attendance
                                             </button>
                                             <button type="button" class="btn btn-outline-secondary" id="cancelBtn">
@@ -389,6 +389,275 @@
                                             </button>
                                         </div>
                                     </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Attendance History -->
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Attendance History</h5>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exportAttendanceModal">
+                                    <i class="bx bx-download"></i> Export Records
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <!-- Filter Panel -->
+                                <div class="mb-4">
+                                    <div class="card card-body"
+                                        style="background-color: #1a2332; border: 1px solid #2d3e52;">
+                                        <div class="row g-3">
+                                            <div class="col-md-3">
+                                                <label class="form-label" style="color: #b8c5d6;">Course</label>
+                                                <select class="form-select"
+                                                    style="background-color: #243447; border: 1px solid #3d4f63; color: #b8c5d6;">
+                                                    <option value="">All Courses</option>
+                                                    <option value="beauty-skin">Beauty Care (Skin Care) NC II</option>
+                                                    <option value="beauty-nail">Beauty Care (Nail Care) NC II</option>
+                                                    <option value="aesthetic-ii">Aesthetic Services Level II</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label class="form-label" style="color: #b8c5d6;">Date From</label>
+                                                <input type="date" class="form-control"
+                                                    style="background-color: #243447; border: 1px solid #3d4f63; color: #b8c5d6;">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label class="form-label" style="color: #b8c5d6;">Date To</label>
+                                                <input type="date" class="form-control"
+                                                    style="background-color: #243447; border: 1px solid #3d4f63; color: #b8c5d6;">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="form-label" style="color: #b8c5d6;">Status</label>
+                                                <select class="form-select"
+                                                    style="background-color: #243447; border: 1px solid #3d4f63; color: #b8c5d6;">
+                                                    <option value="">All Status</option>
+                                                    <option value="present">Present</option>
+                                                    <option value="absent">Absent</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-1 d-flex align-items-end">
+                                                <button type="button" class="btn btn-outline-secondary w-100"
+                                                    style="border-color: #3d4f63; color: #b8c5d6;">
+                                                    <i class="bx bx-reset"></i>
+                                                </button>
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div style="color: #b8c5d6;" class="showing-text">Showing 1 to 6 of
+                                                        15 attendance records</div>
+                                                    <nav aria-label="Page navigation">
+                                                        <ul class="pagination mb-0">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" href="#" tabindex="-1"
+                                                                    style="background-color: #243447 !important; border-color: #3d4f63 !important; color: #b8c5d6 !important;">Previous</a>
+                                                            </li>
+                                                            <li class="page-item active">
+                                                                <a class="page-link page-num" href="#" data-page="1"
+                                                                    style="background-color: var(--primary-blue) !important; border-color: var(--primary-blue) !important; color: #ffffff !important;">1</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link page-num" href="#" data-page="2"
+                                                                    style="background-color: #243447 !important; border-color: #3d4f63 !important; color: #b8c5d6 !important;">2</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link page-num" href="#" data-page="3"
+                                                                    style="background-color: #243447 !important; border-color: #3d4f63 !important; color: #b8c5d6 !important;">3</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#"
+                                                                    style="background-color: #243447 !important; border-color: #3d4f63 !important; color: #b8c5d6 !important;">Next</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Attendance Records Grid -->
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                                    <!-- Attendance Record 1 -->
+                                    <div class="col">
+                                        <div class="card h-100"
+                                            style="background-color: #1e293b; border: 1px solid #334155;">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                                    <span class="badge bg-success">Present</span>
+                                                    <small style="color: #94a3b8;">Feb 10, 2026</small>
+                                                </div>
+                                                <h6 class="card-title mb-2" style="color: #e2e8f0;">Beauty Care (Skin
+                                                    Care) NC II</h6>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-time me-1"></i>09:00 AM
+                                                </p>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-calendar me-1"></i>Monday
+                                                </p>
+                                                <p class="card-text small mb-3" style="color: #94a3b8;">
+                                                    <i class="bx bx-note me-1"></i>Regular class attendance
+                                                </p>
+                                                <div class="d-flex gap-2">
+                                                    <button class="btn btn-sm btn-outline-primary flex-fill"
+                                                        style="border-color: #3b82f6; color: #3b82f6;">
+                                                        <i class="bx bx-show"></i> View
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Attendance Record 2 -->
+                                    <div class="col">
+                                        <div class="card h-100"
+                                            style="background-color: #1e293b; border: 1px solid #334155;">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                                    <span class="badge bg-success">Present</span>
+                                                    <small style="color: #94a3b8;">Feb 09, 2026</small>
+                                                </div>
+                                                <h6 class="card-title mb-2" style="color: #e2e8f0;">Beauty Care (Skin
+                                                    Care) NC II</h6>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-time me-1"></i>09:00 AM
+                                                </p>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-calendar me-1"></i>Sunday
+                                                </p>
+                                                <p class="card-text small mb-3" style="color: #94a3b8;">
+                                                    <i class="bx bx-note me-1"></i>Practical session
+                                                </p>
+                                                <div class="d-flex gap-2">
+                                                    <button class="btn btn-sm btn-outline-primary flex-fill"
+                                                        style="border-color: #3b82f6; color: #3b82f6;">
+                                                        <i class="bx bx-show"></i> View
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Attendance Record 3 -->
+                                    <div class="col">
+                                        <div class="card h-100"
+                                            style="background-color: #1e293b; border: 1px solid #334155;">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                                    <span class="badge bg-danger">Absent</span>
+                                                    <small style="color: #94a3b8;">Feb 08, 2026</small>
+                                                </div>
+                                                <h6 class="card-title mb-2" style="color: #e2e8f0;">Beauty Care (Skin
+                                                    Care) NC II</h6>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-time me-1"></i>09:00 AM
+                                                </p>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-calendar me-1"></i>Saturday
+                                                </p>
+                                                <p class="card-text small mb-3" style="color: #94a3b8;">
+                                                    <i class="bx bx-note me-1"></i>No attendance recorded
+                                                </p>
+                                                <div class="d-flex gap-2">
+                                                    <button class="btn btn-sm btn-outline-primary flex-fill"
+                                                        style="border-color: #3b82f6; color: #3b82f6;">
+                                                        <i class="bx bx-show"></i> View
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Attendance Record 4 -->
+                                    <div class="col">
+                                        <div class="card h-100"
+                                            style="background-color: #1e293b; border: 1px solid #334155;">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                                    <span class="badge bg-success">Present</span>
+                                                    <small style="color: #94a3b8;">Feb 07, 2026</small>
+                                                </div>
+                                                <h6 class="card-title mb-2" style="color: #e2e8f0;">Beauty Care (Nail
+                                                    Care) NC II</h6>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-time me-1"></i>02:00 PM
+                                                </p>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-calendar me-1"></i>Friday
+                                                </p>
+                                                <p class="card-text small mb-3" style="color: #94a3b8;">
+                                                    <i class="bx bx-note me-1"></i>Theory class
+                                                </p>
+                                                <div class="d-flex gap-2">
+                                                    <button class="btn btn-sm btn-outline-primary flex-fill"
+                                                        style="border-color: #3b82f6; color: #3b82f6;">
+                                                        <i class="bx bx-show"></i> View
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Attendance Record 5 -->
+                                    <div class="col">
+                                        <div class="card h-100"
+                                            style="background-color: #1e293b; border: 1px solid #334155;">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                                    <span class="badge bg-success">Present</span>
+                                                    <small style="color: #94a3b8;">Feb 06, 2026</small>
+                                                </div>
+                                                <h6 class="card-title mb-2" style="color: #e2e8f0;">Aesthetic Services
+                                                    Level II</h6>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-time me-1"></i>10:00 AM
+                                                </p>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-calendar me-1"></i>Thursday
+                                                </p>
+                                                <p class="card-text small mb-3" style="color: #94a3b8;">
+                                                    <i class="bx bx-note me-1"></i>Workshop session
+                                                </p>
+                                                <div class="d-flex gap-2">
+                                                    <button class="btn btn-sm btn-outline-primary flex-fill"
+                                                        style="border-color: #3b82f6; color: #3b82f6;">
+                                                        <i class="bx bx-show"></i> View
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Attendance Record 6 -->
+                                    <div class="col">
+                                        <div class="card h-100"
+                                            style="background-color: #1e293b; border: 1px solid #334155;">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                                    <span class="badge bg-success">Present</span>
+                                                    <small style="color: #94a3b8;">Feb 05, 2026</small>
+                                                </div>
+                                                <h6 class="card-title mb-2" style="color: #e2e8f0;">Beauty Care (Skin
+                                                    Care) NC II</h6>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-time me-1"></i>09:00 AM
+                                                </p>
+                                                <p class="card-text small mb-2" style="color: #94a3b8;">
+                                                    <i class="bx bx-calendar me-1"></i>Wednesday
+                                                </p>
+                                                <p class="card-text small mb-3" style="color: #94a3b8;">
+                                                    <i class="bx bx-note me-1"></i>Assessment day
+                                                </p>
+                                                <div class="d-flex gap-2">
+                                                    <button class="btn btn-sm btn-outline-primary flex-fill"
+                                                        style="border-color: #3b82f6; color: #3b82f6;">
+                                                        <i class="bx bx-show"></i> View
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
