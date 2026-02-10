@@ -1,5 +1,46 @@
 /* Attendance specific styles */
 
+/* Course Card Styles */
+.course-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.course-card:hover {
+    border-color: #5ba3d0;
+    box-shadow: 0 4px 12px rgba(54, 145, 191, 0.2);
+    transform: translateY(-2px);
+}
+
+.course-card.active {
+    border: 3px solid #10b981 !important;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 1), 0 0 10px rgba(16, 185, 129, 0.8), 0 0 10px rgba(5, 150, 105, 0.6), 0 4px 10px rgba(5, 150, 105, 0.4) !important;
+    transform: scale(1.02) !important;
+}
+
+.course-card.active .bx-book-open {
+    color: #10b981 !important;
+}
+
+.course-card.active .card-title {
+    color: #10b981 !important;
+    font-weight: 600 !important;
+}
+
+.course-card.active img {
+    border: 3px solid #10b981 !important;
+}
+
+.course-card.active .bx-time-five {
+    color: #10b981 !important;
+}
+
+.course-card.active .text-muted {
+    color: #10b981 !important;
+}
+
+/* Legacy course selector styles (keeping for compatibility) */
 .course-selector {
     cursor: pointer;
     transition: all 0.3s ease;
@@ -14,6 +55,22 @@
 .course-selector.active {
     border-color: #3b82f6;
     background-color: rgba(59, 130, 246, 0.05);
+}
+
+/* Time input icon styling */
+#attendanceTime {
+    color-scheme: white;
+}
+
+#attendanceTime::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+/* For Firefox */
+#attendanceTime::-moz-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
 }
 
 .image-preview {

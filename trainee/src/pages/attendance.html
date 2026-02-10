@@ -241,20 +241,68 @@
                 <div class="content-wrapper">
                     <!-- Content -->
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <h4 class="mb-4">Attendance Record</h4>
-
                         <!-- Course Selection -->
                         <div class="row mb-4">
                             <div class="col-12">
-                                <h6 class="mb-3">Select a Course</h6>
                                 <div class="row" id="coursesContainer">
-                                    <!-- Course cards will be generated here -->
+                                    <div class="col-md-6 col-lg-4 mb-4">
+                                        <div class="card course-card active" data-course-id="1"
+                                            onclick="selectCourse(1, 'Beauty Care (Skin Care) NC II', this)"
+                                            style="border: 3px solid rgb(16, 185, 129); box-shadow: rgb(16, 185, 129) 0px 0px 15px, rgba(16, 185, 129, 0.8) 0px 0px 30px, rgba(5, 150, 105, 0.6) 0px 0px 45px, rgba(5, 150, 105, 0.4) 0px 4px 20px; transform: scale(1.02);">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=250&fit=crop"
+                                                        alt="Beauty Care (Skin Care) NC II"
+                                                        style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%; border: 3px solid rgb(16, 185, 129);" />
+                                                </div>
+                                                <h5 class="card-title"
+                                                    style="color: rgb(16, 185, 129); font-weight: 600;">Beauty Care
+                                                    (Skin Care) NC II</h5>
+                                                <p class="text-muted mb-0" style="color: rgb(16, 185, 129);">
+                                                    <i class="bx bx-time-five me-1"
+                                                        style="color: rgb(16, 185, 129);"></i>307 hours
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4">
+                                        <div class="card course-card" data-course-id="2"
+                                            onclick="selectCourse(2, 'Beauty Care (Nail Care) NC II', this)">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&h=250&fit=crop"
+                                                        alt="Beauty Care (Nail Care) NC II"
+                                                        style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%; border: 3px solid #3691bf;" />
+                                                </div>
+                                                <h5 class="card-title">Beauty Care (Nail Care) NC II</h5>
+                                                <p class="text-muted mb-0">
+                                                    <i class="bx bx-time-five me-1"></i>307 hours
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4">
+                                        <div class="card course-card" data-course-id="3"
+                                            onclick="selectCourse(3, 'Aesthetic Services Level II', this)">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&h=250&fit=crop"
+                                                        alt="Aesthetic Services Level II"
+                                                        style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%; border: 3px solid #3691bf;" />
+                                                </div>
+                                                <h5 class="card-title">Aesthetic Services Level II</h5>
+                                                <p class="text-muted mb-0">
+                                                    <i class="bx bx-time-five me-1"></i>264 hours
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Attendance Form -->
-                        <div id="attendanceForm" style="display: none;">
+                        <div id="attendanceForm">
                             <div class="card">
                                 <div class="card-header">
                                     <h5 class="mb-0" id="selectedCourseTitle"></h5>
