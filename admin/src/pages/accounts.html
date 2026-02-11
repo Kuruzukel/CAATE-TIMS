@@ -1055,53 +1055,44 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="row">
-                            <div class="col mb-3">
-                                <label for="addTraineeName" class="form-label">Full Name</label>
-                                <input type="text" id="addTraineeName" class="form-control"
-                                    placeholder="Enter full name">
-                            </div>
+                        <div class="mb-3">
+                            <label for="addTraineeId" class="form-label">ID</label>
+                            <input type="text" id="addTraineeId" class="form-control" placeholder="Enter ID">
                         </div>
-                        <div class="row">
-                            <div class="col mb-3">
-                                <label for="addTraineeEmail" class="form-label">Email</label>
-                                <input type="email" id="addTraineeEmail" class="form-control" placeholder="Enter email">
-                            </div>
+                        <div class="mb-3">
+                            <label for="addTraineeName" class="form-label">Full Name</label>
+                            <input type="text" id="addTraineeName" class="form-control" placeholder="Enter full name">
                         </div>
-                        <div class="row">
-                            <div class="col mb-3">
-                                <label for="addTraineePhone" class="form-label">Phone Number</label>
-                                <input type="text" id="addTraineePhone" class="form-control"
-                                    placeholder="Enter phone number">
-                            </div>
+                        <div class="mb-3">
+                            <label for="addTraineeEmail" class="form-label">Email Address</label>
+                            <input type="email" id="addTraineeEmail" class="form-control"
+                                placeholder="Enter email address">
                         </div>
-                        <div class="row">
-                            <div class="col mb-3">
-                                <label for="addTraineeCourse" class="form-label">Course</label>
-                                <select id="addTraineeCourse" class="form-select">
-                                    <option value="">Select a course</option>
-                                    <option>Beauty Care (Skin Care) NC II</option>
-                                    <option>Beauty Care (Nail Care) NC II</option>
-                                    <option>Trainers Methodology Level I</option>
-                                    <option>Eyelash & Eyebrow Services Level III</option>
-                                    <option>Aesthetic Services Level II</option>
-                                    <option>Aesthetic Services Level III</option>
-                                    <option>Advanced Skin Care Level IV</option>
-                                    <option>Permanent Makeup Tattoo Level III</option>
-                                    <option>Collagen & Hairloss Treatment</option>
-                                    <option>Facial Peeling & Chemical Peeling</option>
-                                </select>
-                            </div>
+                        <div class="mb-3">
+                            <label for="addTraineePhone" class="form-label">Mobile Number</label>
+                            <input type="text" id="addTraineePhone" class="form-control"
+                                placeholder="Enter mobile number">
                         </div>
-                        <div class="row">
-                            <div class="col mb-3">
-                                <label for="addTraineeStatus" class="form-label">Status</label>
-                                <select id="addTraineeStatus" class="form-select">
-                                    <option value="">Select status</option>
-                                    <option>Enrolled</option>
-                                    <option>Pending</option>
-                                    <option>Completed</option>
-                                </select>
+                        <div class="mb-3">
+                            <label for="addTraineeStatus" class="form-label">Status</label>
+                            <select id="addTraineeStatus" class="form-select">
+                                <option value="">Select status</option>
+                                <option>Enrolled</option>
+                                <option>Pending</option>
+                                <option>Completed</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="addTraineePassword" class="form-label">Password</label>
+                            <div class="position-relative">
+                                <input type="password" id="addTraineePassword" class="form-control"
+                                    placeholder="Enter password" style="padding-right: 40px;">
+                                <button class="btn btn-link position-absolute top-50 end-0 translate-middle-y"
+                                    type="button" id="toggleAddPassword"
+                                    style="text-decoration: none; padding: 0 12px; z-index: 10;">
+                                    <i class="bx bx-hide" id="addPasswordIcon"
+                                        style="font-size: 1.2rem; color: #697a8d;"></i>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -1119,57 +1110,48 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Edit Trainee</h5>
+                    <h5 class="modal-title">Trainee Details</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="row">
-                            <div class="col mb-3">
-                                <label for="editTraineeName" class="form-label">Full Name</label>
-                                <input type="text" id="editTraineeName" class="form-control"
-                                    placeholder="Enter full name">
-                            </div>
+                        <div class="mb-3">
+                            <label for="editTraineeId" class="form-label">ID</label>
+                            <input type="text" id="editTraineeId" class="form-control" placeholder="Enter ID">
                         </div>
-                        <div class="row">
-                            <div class="col mb-3">
-                                <label for="editTraineeEmail" class="form-label">Email</label>
-                                <input type="email" id="editTraineeEmail" class="form-control"
-                                    placeholder="Enter email">
-                            </div>
+                        <div class="mb-3">
+                            <label for="editTraineeName" class="form-label">Full Name</label>
+                            <input type="text" id="editTraineeName" class="form-control" placeholder="Enter full name">
                         </div>
-                        <div class="row">
-                            <div class="col mb-3">
-                                <label for="editTraineePhone" class="form-label">Phone Number</label>
-                                <input type="text" id="editTraineePhone" class="form-control"
-                                    placeholder="Enter phone number">
-                            </div>
+                        <div class="mb-3">
+                            <label for="editTraineeEmail" class="form-label">Email Address</label>
+                            <input type="email" id="editTraineeEmail" class="form-control"
+                                placeholder="Enter email address">
                         </div>
-                        <div class="row">
-                            <div class="col mb-3">
-                                <label for="editTraineeCourse" class="form-label">Course</label>
-                                <select id="editTraineeCourse" class="form-select">
-                                    <option>Beauty Care (Skin Care) NC II</option>
-                                    <option>Beauty Care (Nail Care) NC II</option>
-                                    <option>Trainers Methodology Level I</option>
-                                    <option>Eyelash & Eyebrow Services Level III</option>
-                                    <option>Aesthetic Services Level II</option>
-                                    <option>Aesthetic Services Level III</option>
-                                    <option>Advanced Skin Care Level IV</option>
-                                    <option>Permanent Makeup Tattoo Level III</option>
-                                    <option>Collagen & Hairloss Treatment</option>
-                                    <option>Facial Peeling & Chemical Peeling</option>
-                                </select>
-                            </div>
+                        <div class="mb-3">
+                            <label for="editTraineePhone" class="form-label">Mobile Number</label>
+                            <input type="text" id="editTraineePhone" class="form-control"
+                                placeholder="Enter mobile number">
                         </div>
-                        <div class="row">
-                            <div class="col mb-3">
-                                <label for="editTraineeStatus" class="form-label">Status</label>
-                                <select id="editTraineeStatus" class="form-select">
-                                    <option>Enrolled</option>
-                                    <option>Pending</option>
-                                    <option>Completed</option>
-                                </select>
+                        <div class="mb-3">
+                            <label for="editTraineeStatus" class="form-label">Status</label>
+                            <select id="editTraineeStatus" class="form-select">
+                                <option>Enrolled</option>
+                                <option>Pending</option>
+                                <option>Completed</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editTraineePassword" class="form-label">Password</label>
+                            <div class="position-relative">
+                                <input type="password" id="editTraineePassword" class="form-control"
+                                    placeholder="Enter password" style="padding-right: 40px;">
+                                <button class="btn btn-link position-absolute top-50 end-0 translate-middle-y"
+                                    type="button" id="toggleEditPassword"
+                                    style="text-decoration: none; padding: 0 12px; z-index: 10;">
+                                    <i class="bx bx-hide" id="editPasswordIcon"
+                                        style="font-size: 1.2rem; color: #697a8d;"></i>
+                                </button>
                             </div>
                         </div>
                     </form>
