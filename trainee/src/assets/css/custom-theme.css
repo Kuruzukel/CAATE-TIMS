@@ -929,6 +929,114 @@ footer span,
     .layout-menu-fixed-offcanvas:not(.layout-menu-collapsed) .layout-page {
         padding-top: 0.7rem !important;
     }
+
+    /* Menu visible by default */
+    .layout-menu {
+        transform: translateX(0) !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        position: fixed !important;
+        left: 0 !important;
+    }
+
+    /* When collapsed on large screens - hide the menu */
+    html.layout-menu-collapsed .layout-menu,
+    .layout-menu-collapsed .layout-menu {
+        transform: translateX(-100%) !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        transition: transform 0.3s ease, opacity 0.3s ease !important;
+    }
+
+    /* Adjust layout page when menu is collapsed on large screens */
+    html.layout-menu-collapsed .layout-page,
+    .layout-menu-collapsed .layout-page {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    html.layout-menu-collapsed .layout-navbar,
+    .layout-menu-collapsed .layout-navbar {
+        left: 0 !important;
+        margin-left: 1.625rem !important;
+    }
+
+    /* Adjust content wrapper when menu is collapsed */
+    html.layout-menu-collapsed .content-wrapper,
+    .layout-menu-collapsed .content-wrapper {
+        padding-left: 0 !important;
+    }
+
+    /* Adjust footer when menu is collapsed */
+    html.layout-menu-collapsed .content-footer,
+    html.layout-menu-collapsed footer,
+    .layout-menu-collapsed .content-footer,
+    .layout-menu-collapsed footer {
+        margin-left: 1.625rem !important;
+    }
+
+    /* Force menu to stay expanded width */
+    html.layout-menu-collapsed .layout-menu,
+    .layout-menu-collapsed .layout-menu {
+        width: 15rem !important;
+    }
+
+    /* Always show menu text - override collapsed state */
+    html.layout-menu-collapsed:not(.layout-menu-hover) .layout-menu .menu-item .menu-link>div,
+    html.layout-menu-collapsed:not(.layout-menu-hover) .layout-menu .menu-item .menu-link>span,
+    .layout-menu-collapsed:not(.layout-menu-hover) .layout-menu .menu-item .menu-link>div,
+    .layout-menu-collapsed:not(.layout-menu-hover) .layout-menu .menu-item .menu-link>span {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+        width: auto !important;
+        overflow: visible !important;
+    }
+
+    /* Keep app brand text visible */
+    html.layout-menu-collapsed .layout-menu .app-brand-text,
+    .layout-menu-collapsed .layout-menu .app-brand-text {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+        width: auto !important;
+        overflow: visible !important;
+    }
+
+    /* Prevent menu from shrinking */
+    html.layout-menu-collapsed .layout-menu .app-brand,
+    .layout-menu-collapsed .layout-menu .app-brand {
+        width: 100% !important;
+    }
+
+    /* Force menu links to show full content */
+    html.layout-menu-collapsed .layout-menu .menu-link,
+    .layout-menu-collapsed .layout-menu .menu-link {
+        width: 100% !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Ensure menu inner container stays full width */
+    html.layout-menu-collapsed .layout-menu .menu-inner,
+    .layout-menu-collapsed .layout-menu .menu-inner {
+        width: 100% !important;
+    }
+
+    /* Keep submenu text visible */
+    html.layout-menu-collapsed .layout-menu .menu-sub .menu-link,
+    .layout-menu-collapsed .layout-menu .menu-sub .menu-link {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /* Prevent text from being hidden */
+    html.layout-menu-collapsed .layout-menu .menu-item>.menu-link>div,
+    .layout-menu-collapsed .layout-menu .menu-item>.menu-link>div {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: inline-block !important;
+    }
 }
 
 /* Submenu Active State Styling */

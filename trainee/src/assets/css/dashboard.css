@@ -1,5 +1,42 @@
 /* Dashboard specific styles */
 
+/* Collapsed menu styles for screens >= 1200px */
+@media (min-width: 1200px) {
+    /* When menu is collapsed on large screens */
+    .layout-menu-collapsed .layout-menu {
+        width: 80px !important;
+    }
+
+    .layout-menu-collapsed .layout-page {
+        padding-left: 80px !important;
+    }
+
+    /* Hide text in collapsed menu */
+    .layout-menu-collapsed .menu-text,
+    .layout-menu-collapsed .app-brand-text,
+    .layout-menu-collapsed .menu-link > div:not(.menu-icon) {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    /* Center icons in collapsed menu */
+    .layout-menu-collapsed .menu-link {
+        justify-content: center;
+    }
+
+    /* Hide submenu arrows in collapsed state */
+    .layout-menu-collapsed .menu-toggle::after {
+        display: none;
+    }
+
+    /* Adjust menu item padding in collapsed state */
+    .layout-menu-collapsed .menu-item .menu-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 /* Responsive navbar adjustments */
 @media (max-width: 1199px) {
     .navbar .navbar-nav.align-items-center {
