@@ -1,6 +1,6 @@
-# 🌐 Public Portal - CAATE-ITRMS
+# 🌐 Landing Page - CAATE-ITRMS
 
-Public-facing landing page for CAATE (Creative Aesthetic Academy & Technical Education Inc.) Integrated Training & Resource Management System providing course information and trainer directory. Showcases training programs and enables course discovery for prospective trainees.
+Professional public-facing website for CAATE (Creative Aesthetic Academy & Technical Education Inc.) Integrated Training & Resource Management System. Showcases training programs, course information, and trainer directory to attract prospective trainees.
 
 ## Folder Structure
 

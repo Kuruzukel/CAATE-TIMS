@@ -1,6 +1,6 @@
-# Public Website Pages
+# Landing Page Pages
 
-HTML pages for the Public Website & Course Portal.
+HTML pages for the Landing Page Website.
 
 ## Pages Overview
 
@@ -55,4 +55,4 @@ When creating new course pages:
 
 ---
 
-**Part of:** [CAATE-ITRMS Public Website](../README.md)
+**Part of:** [CAATE-ITRMS Landing Page](../README.md)

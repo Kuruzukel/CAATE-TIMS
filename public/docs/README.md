@@ -1,6 +1,6 @@
-# Public Website Documentation
+# Landing Page Documentation
 
-Documentation for the Public Website & Course Portal.
+Documentation for the Landing Page Website.
 
 ## Available Documentation
 
@@ -18,11 +18,11 @@ Detailed structure documentation including:
 
 Refer to these documents when:
 
-- Understanding the public website structure
+- Understanding the landing page structure
 - Creating new course pages
 - Implementing new features
 - Contributing to the project
 
 ---
 
-**Part of:** [CAATE-ITRMS Public Website](../README.md)
+**Part of:** [CAATE-ITRMS Landing Page](../README.md)

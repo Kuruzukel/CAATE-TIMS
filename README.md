@@ -1,109 +1,224 @@
-# CAATE-ITRMS
+<div align="center">
 
-## Creative Aesthetic Academy & Technical Education Inc. Integrated Training & Resource Management System
+# 🎓 CAATE-ITRMS
+
+### Creative Aesthetic Academy & Technical Education Inc.
+
+### Integrated Training & Resource Management System
+
+<p align="center">
+  <i>A comprehensive, professional-grade training management and inventory system designed for seamless administration of courses, trainees, schedules, competencies, and inventory across multiple user roles.</i>
+</p>
+
+<p align="center">
+  <a href="https://github.com">
+    <img src="https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=for-the-badge" alt="Status">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
+  </a>
+  <a href="https://nodejs.org">
+    <img src="https://img.shields.io/badge/Node.js-v14+-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Kuruzukel">
+    <img src="https://img.shields.io/badge/Last%20Updated-February%202026-orange?style=for-the-badge" alt="Last Updated">
+  </a>
+  <a href="https://tesda.gov.ph">
+    <img src="https://img.shields.io/badge/TESDA-Accredited-28a745?style=for-the-badge&logo=checkmarx&logoColor=white" alt="TESDA Accredited">
+  </a>
+</p>
+
+</div>
+
+<br>
 
 <div align="center">
 
-A comprehensive, professional-grade training management and inventory system designed for seamless administration of courses, trainees, schedules, competencies, and inventory across multiple user roles.
+## 📋 Quick Navigation
 
-[![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=for-the-badge)](https://github.com)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-[![Node.js](https://img.shields.io/badge/Node.js-v14+-green?style=for-the-badge)](https://nodejs.org)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-February%202026-orange?style=for-the-badge)](https://github.com/Kuruzukel)
-[![TESDA Accredited](https://img.shields.io/badge/TESDA-Accredited-success?style=for-the-badge)](https://tesda.gov.ph)
+<table>
+<tr>
+<td align="center" width="25%">
+<a href="#overview">
+<img src="https://img.shields.io/badge/🎯-Overview-4A90E2?style=for-the-badge" alt="Overview"/>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="#features">
+<img src="https://img.shields.io/badge/✨-Features-9B59B6?style=for-the-badge" alt="Features"/>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="#tech-stack">
+<img src="https://img.shields.io/badge/🛠️-Tech_Stack-E67E22?style=for-the-badge" alt="Tech Stack"/>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="#project-structure">
+<img src="https://img.shields.io/badge/📁-Structure-16A085?style=for-the-badge" alt="Structure"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="25%">
+<a href="#applications">
+<img src="https://img.shields.io/badge/🚀-Applications-E74C3C?style=for-the-badge" alt="Applications"/>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="#getting-started">
+<img src="https://img.shields.io/badge/🎬-Getting_Started-27AE60?style=for-the-badge" alt="Getting Started"/>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="#development">
+<img src="https://img.shields.io/badge/💻-Development-3498DB?style=for-the-badge" alt="Development"/>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="#documentation">
+<img src="https://img.shields.io/badge/📚-Documentation-8E44AD?style=for-the-badge" alt="Documentation"/>
+</a>
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+| 🎬 Getting Started |  [View](#getting-started)  |
+| 💻 Development     |    [View](#development)    |
+| 📚 Documentation   |   [View](#documentation)   |
 
 </div>
 
 ---
 
-## � Quick Navigation
+<div align="center">
 
-| Section            | Link                       |
-| ------------------ | -------------------------- |
-| 🎯 Overview        | [View](#overview)          |
-| ✨ Features        | [View](#features)          |
-| 🛠️ Tech Stack      | [View](#tech-stack)        |
-| 📁 Structure       | [View](#project-structure) |
-| 🚀 Applications    | [View](#applications)      |
-| 🎬 Getting Started | [View](#getting-started)   |
-| 💻 Development     | [View](#development)       |
-| 📚 Documentation   | [View](#documentation)     |
+## 🎯 Overview
 
----
+</div>
 
-## Overview
+> **CAATE-ITRMS** is an enterprise-level training management platform that combines administrative dashboards, student portals, public information systems, and comprehensive inventory management. Built with modern web technologies, it provides a seamless experience for administrators, trainees, and the public.
 
-CAATE-ITRMS is an enterprise-level training management platform that combines administrative dashboards, student portals, public information systems, and comprehensive inventory management. Built with modern web technologies, it provides a seamless experience for administrators, trainees, and the public.
+<br>
 
-### Key Capabilities
+<div align="center">
 
-- 🏢 **Multi-role Administration** — Admin, Trainee, and Public interfaces
-- 📚 **Course Management** — 10+ professional courses with detailed information
-- 👥 **Trainee Management** — Complete lifecycle from admission to graduation
-- 📊 **Inventory Tracking** — Audit and CAATE inventory management
-- 📅 **Schedule Management** — Advanced scheduling and calendar features
-- 🎓 **Competency Framework** — Competency tracking and assessment
-- 🔐 **Secure Authentication** — Comprehensive auth and admission workflow
-- 📱 **Responsive Design** — Works seamlessly on all devices
+### ✨ Key Capabilities
 
----
+</div>
 
-## Features
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### � Administration & Management
+
+- **Multi-role Administration** — Admin, Trainee, and Public interfaces
+- **Course Management** — 10+ professional courses with detailed information
+- **Trainee Management** — Complete lifecycle from admission to graduation
+- **Inventory Tracking** — Audit and CAATE inventory management
+
+</td>
+<td width="50%" valign="top">
+
+#### 🎓 Training & Assessment
+
+- **Schedule Management** — Advanced scheduling and calendar features
+- **Competency Framework** — Competency tracking and assessment
+- **Secure Authentication** — Comprehensive auth and admission workflow
+- **Responsive Design** — Works seamlessly on all devices
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+## ✨ Features
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ### 🔧 Admin Dashboard
 
-Comprehensive administrative interface with real-time analytics and management tools.
+<sup>Comprehensive administrative interface with real-time analytics</sup>
 
-- Real-time analytics and metrics
-- Competencies management
-- Course administration
-- Schedule management
-- Graduate tracking
-- User accounts management
-- Attendance records
-- Enrollment processing
-- Application management
-- Inventory Management (Audit & CAATE)
-- Profile management
+```
+✓ Real-time analytics and metrics
+✓ Competencies management
+✓ Course administration
+✓ Schedule management
+✓ Graduate tracking
+✓ User accounts management
+✓ Attendance records
+✓ Enrollment processing
+✓ Application management
+✓ Inventory Management (Audit & CAATE)
+✓ Profile management
+```
 
-### 🔐 Authentication System
+### 🌐 Landing Page
 
-Secure user authentication with complete admission workflow.
+<sup>Professional public-facing website</sup>
 
-- Secure user login & registration
-- Password recovery system
-- Complete admission workflow
-- Application form processing
-- Appointment scheduling
-- Consent management
-- Account settings
+```
+✓ Hero section with call-to-action
+✓ 10 course information pages
+✓ Trainer directory
+✓ Course discovery
+✓ Responsive design
+✓ SEO optimized
+```
 
-### 🌐 Public Portal
+</td>
+<td width="50%" valign="top">
 
-Professional public-facing landing page showcasing courses and programs.
+### � Authentication System
 
-- Professional landing page
-- 10 course information pages
-- Trainer directory
-- Course discovery
-- Responsive design
-- SEO optimized
+<sup>Secure user authentication with complete admission workflow</sup>
+
+```
+✓ Secure user login & registration
+✓ Password recovery system
+✓ Complete admission workflow
+✓ Application form processing
+✓ Appointment scheduling
+✓ Consent management
+✓ Account settings
+```
 
 ### 👨‍🎓 Trainee Dashboard
 
-Student dashboard for course management and profile administration.
+<sup>Student dashboard for course management</sup>
 
-- Personal dashboard
-- Course enrollment tracking
-- Admission slip management
-- Application status
-- Attendance records
-- Competency tracking
-- Class roster
-- Profile management
-- Password management
+```
+✓ Personal dashboard
+✓ Course enrollment tracking
+✓ Admission slip management
+✓ Application status
+✓ Attendance records
+✓ Competency tracking
+✓ Class roster
+✓ Profile management
+✓ Password management
+```
 
----
+</td>
+</tr>
+</table>
+
+<br>
 
 ## Tech Stack
 
@@ -111,16 +226,16 @@ Student dashboard for course management and profile administration.
 
 <div align="center">
 
-|                                                           Logo                                                            | Technology            | Purpose                           | Version |
-| :-----------------------------------------------------------------------------------------------------------------------: | :-------------------- | :-------------------------------- | :-----: |
-|      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40"/>      | **HTML5**             | Semantic markup & structure       | Latest  |
-|       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40"/>       | **CSS3**              | Styling & responsive design       | Latest  |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/> | **JavaScript (ES6+)** | Client-side logic & interactivity | Latest  |
-|  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="40" height="40"/>  | **Bootstrap**         | UI framework & components         | 4.x/5.x |
-|     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" width="40" height="40"/>     | **jQuery**            | DOM manipulation & utilities      |   3.x   |
-|          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/popperdotjs.svg" width="40" height="40"/>           | **Popper.js**         | Tooltip & popover positioning     | Latest  |
-|                                                            📜                                                             | **Perfect Scrollbar** | Custom scrollbar styling          | Latest  |
-|            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/boxicons.svg" width="40" height="40"/>            | **Boxicons**          | Icon library                      | Latest  |
+| Technology                                                                                                                      | Purpose                           | Version |
+| :------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------- | :-----: |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)                              | Semantic markup & structure       | Latest  |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)                                 | Styling & responsive design       | Latest  |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)               | Client-side logic & interactivity |  ES6+   |
+| ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)                  | UI framework & components         | 4.x/5.x |
+| ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)                           | DOM manipulation & utilities      |   3.x   |
+| <img src="https://cdn.rawgit.com/RobinCK/vue-popper/4431e4cc/doc/logo.png" width="120" alt="Popper.js"/>                        | Tooltip & popover positioning     | Latest  |
+| ![Perfect Scrollbar](https://img.shields.io/badge/Perfect_Scrollbar-4A90E2?style=for-the-badge&logo=javascript&logoColor=white) | Custom scrollbar styling          | Latest  |
+| <img src="https://tse3.mm.bing.net/th/id/OIP.nQkUF3Z1BbqGPn3dLlgfuAHaD4?pid=Api&P=0&h=180" width="120" alt="Boxicons"/>         | Icon library                      | Latest  |
 
 </div>
 
@@ -128,12 +243,12 @@ Student dashboard for course management and profile administration.
 
 <div align="center">
 
-|                                                         Logo                                                         | Tool        | Purpose                           |
-| :------------------------------------------------------------------------------------------------------------------: | :---------- | :-------------------------------- |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" width="40" height="40"/>  | **Webpack** | Module bundler & asset management |
-|      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" width="40" height="40"/>      | **Gulp**    | Task automation & build pipeline  |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="40" height="40"/> | **npm**     | Package management                |
-|  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40"/>   | **Node.js** | JavaScript runtime (v14+)         |
+| Tool                                                                                                     | Purpose                           |
+| :------------------------------------------------------------------------------------------------------- | :-------------------------------- |
+| ![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black) | Module bundler & asset management |
+| ![Gulp](https://img.shields.io/badge/Gulp-CF4647?style=for-the-badge&logo=gulp&logoColor=white)          | Task automation & build pipeline  |
+| ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)             | Package management                |
+| ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) | JavaScript runtime (v14+)         |
 
 </div>
 
@@ -141,13 +256,13 @@ Student dashboard for course management and profile administration.
 
 <div align="center">
 
-|                                                             Browser                                                             |    Status    |
-| :-----------------------------------------------------------------------------------------------------------------------------: | :----------: |
-|  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" width="30" height="30"/> **Chrome**   |  ✅ Latest   |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" width="30" height="30"/> **Firefox** |  ✅ Latest   |
-|  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/safari/safari-original.svg" width="30" height="30"/> **Safari**   |  ✅ Latest   |
-| <img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/edge.svg" width="30" height="30"/> **Edge**  |  ✅ Latest   |
-|                                                     📱 **Mobile Browsers**                                                      | ✅ Supported |
+|                                                   Browser                                                   |    Status    |
+| :---------------------------------------------------------------------------------------------------------: | :----------: |
+| ![Chrome](https://img.shields.io/badge/Chrome-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white) |  ✅ Latest   |
+|  ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=firefox&logoColor=white)   |  ✅ Latest   |
+|    ![Safari](https://img.shields.io/badge/Safari-000000?style=for-the-badge&logo=safari&logoColor=white)    |  ✅ Latest   |
+|  ![Edge](https://img.shields.io/badge/Edge-0078D7?style=for-the-badge&logo=microsoftedge&logoColor=white)   |  ✅ Latest   |
+|             ![Mobile](https://img.shields.io/badge/Mobile-Browsers-28a745?style=for-the-badge)              | ✅ Supported |
 
 </div>
 
@@ -210,7 +325,7 @@ CAATE-ITRMS/
 │   ├── package.json                   # Dependencies & scripts
 │   └── README.md                      # Auth documentation
 │
-├── 📂 public/                         # Public Website
+├── 📂 public/                         # Landing Page Website
 │   ├── 📂 dist/                       # Built files
 │   ├── 📂 docs/
 │   │   └── STRUCTURE.md               # Structure documentation
@@ -272,9 +387,9 @@ Secure authentication and comprehensive admission workflow.
 
 [📖 Full Documentation](auth/README.md)
 
-### 3. Public Portal
+### 3. Landing Page
 
-Public-facing landing page showcasing courses and training programs.
+Professional public-facing website showcasing courses and training programs.
 
 **Pages:** 11 | **CSS Files:** 11 | **JS Files:** 12 | **Courses:** 10 professional courses + Trainer Directory
 
@@ -409,8 +524,8 @@ npm run watch
 
 - **[admin/README.md](admin/README.md)** — Admin dashboard guide
 - **[auth/README.md](auth/README.md)** — Authentication system guide
-- **[public/README.md](public/README.md)** — Public portal guide
-- **[trainee/README.md](trainee/README.md)** — Trainee portal guide
+- **[public/README.md](public/README.md)** — Landing page guide
+- **[trainee/README.md](trainee/README.md)** — Trainee dashboard guide
 - **[img/README.md](img/README.md)** — Asset management guide
 
 ### Additional Resources
@@ -479,12 +594,46 @@ For issues, questions, or suggestions:
 
 <div align="center">
 
----
+<br>
 
-**CAATE-ITRMS** © 2026 | All Rights Reserved
+---
 
 <br>
 
-[![Back to Top](https://img.shields.io/badge/⬆️_Back_to_Top-4A90E2?style=for-the-badge&logoColor=white)](#)
+### 🎓 CAATE-ITRMS
+
+**Creative Aesthetic Academy & Technical Education Inc.**  
+_Integrated Training & Resource Management System_
+
+<br>
+
+<table>
+<tr>
+<td align="center">
+<sub>© 2026 CAATE-ITRMS. All Rights Reserved.</sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<sub>Made with ❤️ in the Philippines 🇵🇭</sub>
+</td>
+</tr>
+</table>
+
+<br>
+
+<a href="#">
+  <img src="https://img.shields.io/badge/⬆️_BACK_TO_TOP-4A90E2?style=for-the-badge&labelColor=2C3E50&logo=rocket&logoColor=white" alt="Back to Top"/>
+</a>
+
+<br><br>
+
+<sub>
+  <a href="https://github.com/Kuruzukel">GitHub</a> •
+  <a href="mailto:mikasaackerman.jme@gmail.com">Email</a> •
+  <a href="https://tesda.gov.ph">TESDA</a>
+</sub>
+
+<br><br>
 
 </div>

@@ -1,6 +1,6 @@
-# Public Website Assets
+# Landing Page Assets
 
-Frontend assets for the Public Website & Course Portal.
+Frontend assets for the Landing Page Website.
 
 ## Structure
 
@@ -80,4 +80,4 @@ The service-worker.js enables:
 
 ---
 
-**Part of:** [CAATE-ITRMS Public Website](../README.md)
+**Part of:** [CAATE-ITRMS Landing Page](../README.md)
