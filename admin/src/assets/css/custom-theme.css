@@ -1528,22 +1528,43 @@ footer span,
         transform: translateX(0) !important;
         opacity: 1 !important;
         pointer-events: auto !important;
+        position: fixed !important;
+        left: 0 !important;
     }
 
-    /* When collapsed on large screens */
+    /* When collapsed on large screens - hide the menu */
+    html.layout-menu-collapsed .layout-menu,
     .layout-menu-collapsed .layout-menu {
         transform: translateX(-100%) !important;
         opacity: 0 !important;
         pointer-events: none !important;
+        transition: transform 0.3s ease, opacity 0.3s ease !important;
     }
 
     /* Adjust layout page when menu is collapsed on large screens */
+    html.layout-menu-collapsed .layout-page,
     .layout-menu-collapsed .layout-page {
         margin-left: 0 !important;
+        padding-left: 0 !important;
     }
 
+    html.layout-menu-collapsed .layout-navbar,
     .layout-menu-collapsed .layout-navbar {
         left: 0 !important;
+        margin-left: 1.625rem !important;
+    }
+
+    /* Adjust content wrapper when menu is collapsed */
+    html.layout-menu-collapsed .content-wrapper,
+    .layout-menu-collapsed .content-wrapper {
+        padding-left: 0 !important;
+    }
+
+    /* Adjust footer when menu is collapsed */
+    html.layout-menu-collapsed .content-footer,
+    html.layout-menu-collapsed footer,
+    .layout-menu-collapsed .content-footer,
+    .layout-menu-collapsed footer {
         margin-left: 1.625rem !important;
     }
 }
