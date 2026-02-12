@@ -1,6 +1,6 @@
-# 👨‍🎓 Trainee Portal - ESCAATE
+# 👨‍🎓 Trainee Dashboard - CAATE-ITRMS
 
-Student/trainee dashboard and management interface for ESCAATE (Enterprise Skills & Competency Administration & Training Excellence). Provides trainees with access to their courses, admission information, profile management, and account settings.
+Student/trainee dashboard for CAATE (Creative Aesthetic Academy & Technical Education Inc.) Integrated Training & Resource Management System. Provides trainees with access to their courses, admission information, attendance records, competency tracking, profile management, and account settings.
 
 ## Folder Structure
 
@@ -171,10 +171,20 @@ npm run build
 
 ## Technologies Used
 
-- **Frontend**: HTML5, CSS3, JavaScript
-- **UI Framework**: Bootstrap
-- **Build Tools**: Webpack (if configured)
-- **Utilities**: jQuery, Popper.js, Perfect Scrollbar
+<div align="center">
+
+|                                                           Logo                                                            | Technology            | Purpose                           |
+| :-----------------------------------------------------------------------------------------------------------------------: | :-------------------- | :-------------------------------- |
+|      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40"/>      | **HTML5**             | Semantic markup & structure       |
+|       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40"/>       | **CSS3**              | Styling & responsive design       |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/> | **JavaScript**        | Client-side logic & interactivity |
+|  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="40" height="40"/>  | **Bootstrap**         | UI framework & components         |
+|     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" width="40" height="40"/>     | **jQuery**            | DOM manipulation & utilities      |
+|          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/popperdotjs.svg" width="40" height="40"/>           | **Popper.js**         | Tooltip & popover positioning     |
+|                                                            📜                                                             | **Perfect Scrollbar** | Custom scrollbar styling          |
+|    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" width="40" height="40"/>    | **Webpack**           | Module bundler (if configured)    |
+
+</div>
 
 ## Asset References
 
@@ -359,7 +369,8 @@ For issues or questions, refer to the main project README.md
 
 ---
 
-**Developer:** KEL TO ROR  
+**Developer:** KEL TO YAHHHH!  
+**Email:** [mikasaackerman.jme@gmail.com](mailto:mikasaackerman.jme@gmail.com)  
 **Last Updated**: February 2026  
 **Status**: Active Development  
-**Part of:** [ESCAATE Project](../README.md)
+**Part of:** [CAATE-ITRMS Project](../README.md)

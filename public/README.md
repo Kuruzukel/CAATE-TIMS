@@ -1,6 +1,6 @@
-# 🌐 Public Website & Course Portal - ESCAATE
+# 🌐 Public Portal - CAATE-ITRMS
 
-Public-facing website for ESCAATE (Enterprise Skills & Competency Administration & Training Excellence) providing landing page, course information, and trainer directory. Showcases training programs and enables course discovery for prospective trainees.
+Public-facing landing page for CAATE (Creative Aesthetic Academy & Technical Education Inc.) Integrated Training & Resource Management System providing course information and trainer directory. Showcases training programs and enables course discovery for prospective trainees.
 
 ## Folder Structure
 
@@ -179,11 +179,19 @@ npm run build
 
 ## Technologies Used
 
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Build Tools**: Webpack (if configured)
-- **PWA**: Service Worker support
-- **Responsive Design**: Mobile-first approach
-- **Performance**: Optimized assets and lazy loading
+<div align="center">
+
+|                                                           Logo                                                            | Technology            | Purpose                           |
+| :-----------------------------------------------------------------------------------------------------------------------: | :-------------------- | :-------------------------------- |
+|      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40"/>      | **HTML5**             | Semantic markup & structure       |
+|       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40"/>       | **CSS3**              | Styling & responsive design       |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/> | **JavaScript**        | Client-side logic & interactivity |
+|    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" width="40" height="40"/>    | **Webpack**           | Module bundler (if configured)    |
+|                                                            📱                                                             | **PWA**               | Service Worker support            |
+|                                                            🎨                                                             | **Responsive Design** | Mobile-first approach             |
+|                                                            ⚡                                                             | **Performance**       | Optimized assets & lazy loading   |
+
+</div>
 
 ## Asset References
 
@@ -282,7 +290,8 @@ For issues or questions, refer to:
 
 ---
 
-**Developer:** KEL TO ROR  
+**Developer:** KEL TO YAHHHH!  
+**Email:** [mikasaackerman.jme@gmail.com](mailto:mikasaackerman.jme@gmail.com)  
 **Last Updated**: February 2026  
 **Status**: Active Development  
-**Part of:** [ESCAATE Project](../README.md)
+**Part of:** [CAATE-ITRMS Project](../README.md)

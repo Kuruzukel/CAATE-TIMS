@@ -1,6 +1,6 @@
-# 🖼️ Shared Assets Directory - ESCAATE
+# 🖼️ Shared Assets Directory - CAATE-ITRMS
 
-Centralized repository for images, logos, and visual assets used across all ESCAATE (Enterprise Skills & Competency Administration & Training Excellence) applications (Admin, Auth, Public, and Trainee).
+Centralized repository for images, logos, and visual assets used across all CAATE (Creative Aesthetic Academy & Technical Education Inc.) Integrated Training & Resource Management System applications (Admin, Auth, Public, and Trainee).
 
 ## Folder Structure
 
@@ -264,8 +264,9 @@ For questions about specific images or to request new assets, refer to the main 
 
 ---
 
-**Developer:** KEL TO ROR  
+**Developer:** KEL TO YAHHHH!  
+**Email:** [mikasaackerman.jme@gmail.com](mailto:mikasaackerman.jme@gmail.com)  
 **Last Updated**: February 2026  
 **Total Assets**: 46 files  
 **Status**: Active  
-**Part of:** [ESCAATE Project](../README.md)
+**Part of:** [CAATE-ITRMS Project](../README.md)

@@ -10,6 +10,7 @@ A comprehensive, professional-grade training management and inventory system des
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-v14+-green?style=for-the-badge)](https://nodejs.org)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-February%202026-orange?style=for-the-badge)](https://github.com/Kuruzukel)
+[![TESDA Accredited](https://img.shields.io/badge/TESDA-Accredited-success?style=for-the-badge)](https://tesda.gov.ph)
 
 </div>
 
@@ -65,7 +66,7 @@ Comprehensive administrative interface with real-time analytics and management t
 - Inventory Management (Audit & CAATE)
 - Profile management
 
-### 🔐 Authentication & Admission
+### 🔐 Authentication System
 
 Secure user authentication with complete admission workflow.
 
@@ -79,7 +80,7 @@ Secure user authentication with complete admission workflow.
 
 ### 🌐 Public Portal
 
-Professional public-facing website showcasing courses and programs.
+Professional public-facing landing page showcasing courses and programs.
 
 - Professional landing page
 - 10 course information pages
@@ -88,7 +89,7 @@ Professional public-facing website showcasing courses and programs.
 - Responsive design
 - SEO optimized
 
-### 👨‍🎓 Trainee Portal
+### 👨‍🎓 Trainee Dashboard
 
 Student dashboard for course management and profile administration.
 
@@ -96,6 +97,9 @@ Student dashboard for course management and profile administration.
 - Course enrollment tracking
 - Admission slip management
 - Application status
+- Attendance records
+- Competency tracking
+- Class roster
 - Profile management
 - Password management
 
@@ -105,33 +109,47 @@ Student dashboard for course management and profile administration.
 
 ### Frontend Technologies
 
-| Technology            | Purpose                           | Version |
-| --------------------- | --------------------------------- | ------- |
-| **HTML5**             | Semantic markup & structure       | Latest  |
-| **CSS3**              | Styling & responsive design       | Latest  |
-| **JavaScript (ES6+)** | Client-side logic & interactivity | Latest  |
-| **Bootstrap**         | UI framework & components         | 4.x/5.x |
-| **jQuery**            | DOM manipulation & utilities      | 3.x     |
-| **Popper.js**         | Tooltip & popover positioning     | Latest  |
-| **Perfect Scrollbar** | Custom scrollbar styling          | Latest  |
-| **Boxicons**          | Icon library                      | Latest  |
+<div align="center">
+
+|                                                           Logo                                                            | Technology            | Purpose                           | Version |
+| :-----------------------------------------------------------------------------------------------------------------------: | :-------------------- | :-------------------------------- | :-----: |
+|      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40"/>      | **HTML5**             | Semantic markup & structure       | Latest  |
+|       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40"/>       | **CSS3**              | Styling & responsive design       | Latest  |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/> | **JavaScript (ES6+)** | Client-side logic & interactivity | Latest  |
+|  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="40" height="40"/>  | **Bootstrap**         | UI framework & components         | 4.x/5.x |
+|     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" width="40" height="40"/>     | **jQuery**            | DOM manipulation & utilities      |   3.x   |
+|          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/popperdotjs.svg" width="40" height="40"/>           | **Popper.js**         | Tooltip & popover positioning     | Latest  |
+|                                                            📜                                                             | **Perfect Scrollbar** | Custom scrollbar styling          | Latest  |
+|            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/boxicons.svg" width="40" height="40"/>            | **Boxicons**          | Icon library                      | Latest  |
+
+</div>
 
 ### Build & Development Tools
 
-| Tool        | Purpose                           |
-| ----------- | --------------------------------- |
-| **Webpack** | Module bundler & asset management |
-| **Gulp**    | Task automation & build pipeline  |
-| **npm**     | Package management                |
-| **Node.js** | JavaScript runtime (v14+)         |
+<div align="center">
+
+|                                                         Logo                                                         | Tool        | Purpose                           |
+| :------------------------------------------------------------------------------------------------------------------: | :---------- | :-------------------------------- |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" width="40" height="40"/>  | **Webpack** | Module bundler & asset management |
+|      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" width="40" height="40"/>      | **Gulp**    | Task automation & build pipeline  |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="40" height="40"/> | **npm**     | Package management                |
+|  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40"/>   | **Node.js** | JavaScript runtime (v14+)         |
+
+</div>
 
 ### Browser Support
 
-- ✅ Chrome (latest)
-- ✅ Firefox (latest)
-- ✅ Safari (latest)
-- ✅ Edge (latest)
-- ✅ Mobile browsers
+<div align="center">
+
+|                                                             Browser                                                             |    Status    |
+| :-----------------------------------------------------------------------------------------------------------------------------: | :----------: |
+|  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" width="30" height="30"/> **Chrome**   |  ✅ Latest   |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" width="30" height="30"/> **Firefox** |  ✅ Latest   |
+|  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/safari/safari-original.svg" width="30" height="30"/> **Safari**   |  ✅ Latest   |
+| <img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/edge.svg" width="30" height="30"/> **Edge**  |  ✅ Latest   |
+|                                                     📱 **Mobile Browsers**                                                      | ✅ Supported |
+
+</div>
 
 ---
 
@@ -256,17 +274,17 @@ Secure authentication and comprehensive admission workflow.
 
 ### 3. Public Portal
 
-Public-facing website showcasing courses and training programs.
+Public-facing landing page showcasing courses and training programs.
 
 **Pages:** 11 | **CSS Files:** 11 | **JS Files:** 12 | **Courses:** 10 professional courses + Trainer Directory
 
 [📖 Full Documentation](public/README.md)
 
-### 4. Trainee Portal
+### 4. Trainee Dashboard
 
 Student dashboard for course management and profile administration.
 
-**Pages:** 10 | **CSS Files:** 12 | **JS Files:** 13 | **Features:** Dashboard, Admission Slip, Application, Courses, Profile, Password Management
+**Pages:** 10 | **CSS Files:** 12 | **JS Files:** 13 | **Features:** Dashboard, Admission Slip, Application, Courses, Attendance, Competencies, Class Roster, Profile, Password Management
 
 [📖 Full Documentation](trainee/README.md)
 
@@ -447,6 +465,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Email:** [mikasaackerman.jme@gmail.com](mailto:mikasaackerman.jme@gmail.com)  
 **GitHub:** [@Kuruzukel](https://github.com/Kuruzukel)
 
+**Institution:** Creative Aesthetic Academy & Technical Education Inc.  
+**Location:** Philippines
+
 For issues, questions, or suggestions:
 
 1. Check the [Documentation](#documentation) section
@@ -462,6 +483,8 @@ For issues, questions, or suggestions:
 
 **CAATE-ITRMS** © 2026 | All Rights Reserved
 
-[↑ Back to Top](#-caate-itrms)
+<br>
+
+[![Back to Top](https://img.shields.io/badge/⬆️_Back_to_Top-4A90E2?style=for-the-badge&logoColor=white)](#)
 
 </div>
