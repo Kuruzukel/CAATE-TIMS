@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         showAppointmentDetails(info.event);
                     },
                     dateClick: function (info) {
-                        console.log('Date clicked: ' + info.dateStr);
+                        // Date clicked
                     },
                     eventDidMount: function (info) {
                         const status = info.event.extendedProps.status;
@@ -391,7 +391,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (searchInput) {
         searchInput.addEventListener('input', function (e) {
             const searchTerm = e.target.value.toLowerCase();
-            console.log('Searching for:', searchTerm);
         });
     }
 
