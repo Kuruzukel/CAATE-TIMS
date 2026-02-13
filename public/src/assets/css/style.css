@@ -588,6 +588,19 @@ h6 {
   position: relative;
 }
 
+/* CAATE Logo - Specific Styling */
+.hero-logo.caate-logo {
+  width: 205px;
+  /* Adjust this to control image size inside the circle */
+}
+
+/* TESDA Logo - Specific Styling */
+.hero-logo.tesda-logo {
+  width: 205px;
+  padding: 20px;
+  /* Adjust this to control image size inside the circle */
+}
+
 .hero-logo::before {
   content: "";
   position: absolute;
