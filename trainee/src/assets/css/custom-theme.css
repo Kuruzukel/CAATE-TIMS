@@ -2380,58 +2380,6 @@ nav.layout-navbar.navbar-detached.container-xxl,
     width: 100% !important;
 }
 
-/* Responsive navbar adjustments */
-@media (max-width: 1199px) {
-    .navbar .navbar-nav.align-items-center {
-        max-width: 200px !important;
-    }
-
-    .navbar .nav-item.position-relative {
-        width: 180px !important;
-        max-width: 180px !important;
-    }
-
-    .navbar .nav-item.position-relative .form-control {
-        width: 180px !important;
-        max-width: 180px !important;
-        min-width: 120px !important;
-    }
-}
-
-@media (max-width: 991px) {
-    .navbar .navbar-nav.align-items-center {
-        max-width: 180px !important;
-    }
-
-    .navbar .nav-item.position-relative {
-        width: 150px !important;
-        max-width: 150px !important;
-    }
-
-    .navbar .nav-item.position-relative .form-control {
-        width: 150px !important;
-        max-width: 150px !important;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar .navbar-nav.align-items-center {
-        max-width: 150px !important;
-    }
-
-    .navbar .nav-item.position-relative {
-        width: 120px !important;
-        max-width: 120px !important;
-    }
-
-    .navbar .nav-item.position-relative .form-control {
-        width: 120px !important;
-        max-width: 120px !important;
-        min-width: 100px !important;
-        font-size: 0.875rem !important;
-    }
-}
-
 /* Mobile Menu Close Button */
 .menu-close-btn {
     position: absolute;
@@ -2494,29 +2442,6 @@ nav.layout-navbar.navbar-detached.container-xxl,
 .navbar-nav-right {
     display: flex !important;
     width: 100% !important;
-}
-
-/* Ensure search bar is responsive */
-@media (max-width: 768px) {
-    .navbar .nav-item.position-relative {
-        max-width: 200px;
-    }
-
-    .navbar .nav-item.position-relative .form-control {
-        width: 200px !important;
-        max-width: 200px !important;
-    }
-}
-
-@media (max-width: 576px) {
-    .navbar .nav-item.position-relative {
-        max-width: 150px;
-    }
-
-    .navbar .nav-item.position-relative .form-control {
-        width: 150px !important;
-        max-width: 150px !important;
-    }
 }
 
 /* Responsive search bar for small screens (500px and below) */

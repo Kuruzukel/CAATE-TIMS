@@ -140,56 +140,6 @@
     }
 }
 
-/* Responsive navbar adjustments */
-@media (max-width: 1199px) {
-    .navbar .navbar-nav.align-items-center {
-        max-width: 200px !important;
-    }
-
-    .navbar .nav-item.position-relative {
-        width: 180px !important;
-        max-width: 180px !important;
-    }
-
-    .navbar .nav-item.position-relative .form-control {
-        width: 180px !important;
-        max-width: 180px !important;
-        min-width: 120px !important;
-    }
-}
-
-@media (max-width: 991px) {
-    .navbar .navbar-nav.align-items-center {
-        max-width: 180px !important;
-    }
-
-    .navbar .nav-item.position-relative {
-        width: 150px !important;
-        max-width: 150px !important;
-    }
-
-    .navbar .nav-item.position-relative .form-control {
-        width: 150px !important;
-        max-width: 150px !important;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar .navbar-nav.align-items-center {
-        max-width: 150px !important;
-    }
-
-    .navbar .nav-item.position-relative {
-        width: 120px !important;
-        max-width: 120px !important;
-    }
-
-    .navbar .nav-item.position-relative .form-control {
-        width: 120px !important;
-        max-width: 120px !important;
-    }
-}
-
 /* Ensure navbar maintains proper spacing on all screen sizes */
 @media (max-width: 1199.98px) {
     .layout-navbar {
