@@ -281,7 +281,7 @@ h6 {
   border: 1px solid var(--primary-blue);
   border-radius: var(--border-radius-pill);
   box-shadow: 0 8px 32px rgba(22, 56, 86, 0.15);
-  padding: 0.75rem 1.5rem;
+  padding: 0.7rem 0.7rem;
   transition: all var(--transition-normal);
 }
 
@@ -1630,7 +1630,7 @@ h6 {
 @media (max-width: 768px) {
 
   .navbar {
-    padding: 0.5rem 1.5rem;
+    padding: 0.7rem 0.7rem;
   }
 
   .navbar-title-mobile {
@@ -1745,7 +1745,7 @@ h6 {
 @media (max-width: 480px) {
   .navbar {
     width: calc(100% - 1rem);
-    padding: 0.625rem 1rem;
+    padding: 0.7rem 0.7rem;
   }
 
   .navbar-logo-img {
@@ -1807,7 +1807,7 @@ h6 {
 
 @media (max-width: 320px) {
   .navbar {
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 0.7rem;
   }
 
   .hero-logos {
