@@ -553,3 +553,11 @@
         justify-content: center;
     }
 }
+
+
+/* Center align course hero meta on mobile */
+@media (max-width: 768px) {
+    .course-hero-meta {
+        justify-content: center;
+    }
+}

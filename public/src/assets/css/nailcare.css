@@ -148,7 +148,6 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.75rem;
     font-weight: 800;
     background: linear-gradient(145deg, #3691bf 0%, #325596 50%, #3a6385 100%);
     -webkit-background-clip: text;
@@ -566,6 +565,14 @@ TE short text font size */
     }
 
     .footer-social {
+        justify-content: center;
+    }
+}
+
+
+/* Center align course hero meta on mobile */
+@media (max-width: 768px) {
+    .course-hero-meta {
         justify-content: center;
     }
 }
