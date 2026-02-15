@@ -37,6 +37,18 @@
   box-sizing: border-box;
 }
 
+/* Prevent horizontal overflow */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -45,6 +57,9 @@ html {
   /* Firefox */
   -ms-overflow-style: none;
   /* IE and Edge */
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 html::-webkit-scrollbar {
@@ -67,6 +82,8 @@ body {
   /* Firefox */
   -ms-overflow-style: none;
   /* IE and Edge */
+  max-width: 100%;
+  width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -233,6 +250,8 @@ h6 {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .glass-card {
@@ -599,6 +618,8 @@ h6 {
   align-items: center;
   padding: 6rem 0 4rem;
   overflow: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 .hero::before {
@@ -1185,6 +1206,7 @@ h6 {
   scrollbar-width: none;
   -ms-overflow-style: none;
   padding: 1rem 0.25rem 2rem 0.25rem;
+  max-width: 100%;
 }
 
 .courses-carousel::-webkit-scrollbar {
