@@ -1,6 +1,24 @@
 /* Import main styles from style.css */
 @import url('style.css');
 
+/* Prevent horizontal overflow */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    position: relative;
+}
+
 /* Hide scrollbar for all course pages */
 html {
     scrollbar-width: none;

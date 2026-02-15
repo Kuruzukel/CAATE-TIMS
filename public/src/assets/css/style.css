@@ -42,11 +42,24 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  width: 100%;
 }
 
 body {
   position: relative;
   width: 100%;
+}
+
+/* Ensure all sections don't cause horizontal overflow */
+section,
+.hero,
+.about,
+.courses,
+.services,
+.footer {
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 html {
@@ -2343,6 +2356,17 @@ h6 {
 
   .mobile-menu-toggle {
     width: 55px;
+  }
+
+  /* Hero dark section background adjustments for mobile */
+  .hero.dark-section::before {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+  }
+
+  .hero.dark-section::after {
+    background: linear-gradient(135deg, rgba(22, 56, 86, 0.5), rgba(18, 57, 90, 0.5));
   }
 
   .hero-logos {
